@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('_include/_head-assets.html', {
+		"title": "08_dashboard"
+	}) 
+	
+</head>
+<body>
+	<div class="wrapper wrapper-inward">
+		<!-- .header -->
+		@@include('_include/_header-inward.html', {
+			"title": "Dashboard"
+		})
+		<!-- /.header -->
+		
+		<main class="main-inward">
+			<div class="main-inward__cover bdt">
+				<div class="main-inward__side side-menu-inward">
+					<a href="01_home.html" class="side-menu-inward__logo">
+						<img src="../assets/logo.png" alt="">
+					</a>
+					<nav class="side-menu-inward__nav">
+						<ul>
+							<li class="active">
+								<a href="#"><i class="dashboard-ico"></i><span>DASHBOARD</span></a>
+								<ul>
+									<li class="active"><a href="#">General</a></li>
+									<li><a href="#">Financials</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#"><i class="accounts-ico"></i><span>ACCOUNTS</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="suppliers-ico"></i><span>SUPPLIERS</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="sales-marketing-ico"></i><span>SALES & MARKETING</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="projects-ico"></i><span>PROJECTS</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="tools-ico"></i><span>TOOLS</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="class-society-ico"></i><span>CLASS SOCIETY</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="settings-ico"></i><span>SETTINGS</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="my-profile-ico"></i><span>MY PROFILE</span></a>
+							</li>
+						</ul>
+					</nav>
+				</div>	
+				<div class="main-inward__content">
+					<div class="main-inward__content-section">
+						<div class="fiters-block">
+							<div class="input-wrap select-inward">
+								<select class="js-example-basic-single" style="width: 100%">
+									<option>ALL REGIONS</option>
+								  <option>Option 1</option>
+								 
+								  <option>Option 2</option>
+								</select>
+							</div>
+							<div class="input-wrap select-inward">
+								<select class="js-example-basic-single" style="width: 100%">
+									<option>THIS MONTH</option>
+								  <option>Option 1</option>
+								 
+								  <option>Option 2</option>
+								</select>
+							</div>
+							<div class="input-wrap select-inward">
+								<select class="js-example-basic-single" style="width: 100%">
+									<option>PROJECT MANAGER</option>
+								  <option>Option 1</option>
+								 
+								  <option>Option 2</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="main-inward__content-section">
+						<div class="difference-info-block">
+							<div class="difference-info">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+
+	</div>
+	@@include('_include/_footer-assets.html') 
+</body>
+</html>
