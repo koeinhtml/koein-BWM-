@@ -4,6 +4,7 @@
 	@@include('_include/_head-assets.html', {
 		"title": "08_dashboard"
 	}) 
+
 	
 </head>
 <body>
@@ -15,82 +16,422 @@
 		<!-- /.header -->
 		
 		<main class="main-inward">
-			<div class="main-inward__cover bdt">
-				<div class="main-inward__side side-menu-inward">
-					<a href="01_home.html" class="side-menu-inward__logo">
-						<img src="../assets/logo.png" alt="">
-					</a>
-					<nav class="side-menu-inward__nav">
-						<ul>
-							<li class="active">
-								<a href="#"><i class="dashboard-ico"></i><span>DASHBOARD</span></a>
-								<ul>
-									<li class="active"><a href="#">General</a></li>
-									<li><a href="#">Financials</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#"><i class="accounts-ico"></i><span>ACCOUNTS</span></a>
-							</li>
-							<li>
-								<a href="#"><i class="suppliers-ico"></i><span>SUPPLIERS</span></a>
-							</li>
-							<li>
-								<a href="#"><i class="sales-marketing-ico"></i><span>SALES & MARKETING</span></a>
-							</li>
-							<li>
-								<a href="#"><i class="projects-ico"></i><span>PROJECTS</span></a>
-							</li>
-							<li>
-								<a href="#"><i class="tools-ico"></i><span>TOOLS</span></a>
-							</li>
-							<li>
-								<a href="#"><i class="class-society-ico"></i><span>CLASS SOCIETY</span></a>
-							</li>
-							<li>
-								<a href="#"><i class="settings-ico"></i><span>SETTINGS</span></a>
-							</li>
-							<li>
-								<a href="#"><i class="my-profile-ico"></i><span>MY PROFILE</span></a>
-							</li>
-						</ul>
-					</nav>
-				</div>	
-				<div class="main-inward__content">
-					<div class="main-inward__content-section">
-						<div class="fiters-block">
-							<div class="input-wrap select-inward">
-								<select class="js-example-basic-single" style="width: 100%">
-									<option>ALL REGIONS</option>
-								  <option>Option 1</option>
-								 
-								  <option>Option 2</option>
-								</select>
-							</div>
-							<div class="input-wrap select-inward">
-								<select class="js-example-basic-single" style="width: 100%">
-									<option>THIS MONTH</option>
-								  <option>Option 1</option>
-								 
-								  <option>Option 2</option>
-								</select>
-							</div>
-							<div class="input-wrap select-inward">
-								<select class="js-example-basic-single" style="width: 100%">
-									<option>PROJECT MANAGER</option>
-								  <option>Option 1</option>
-								 
-								  <option>Option 2</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="main-inward__content-section">
-						<div class="difference-info-block">
-							<div class="difference-info">
-								
+			<div class="main-inward__wrap">
+				<div class="main-inward__cover bdt">
+					<div class="main-inward__side">
+						<a href="01_home.html" class="main-inward__side-logo">
+							<img src="../assets/logo.png" alt="">
+						</a>
+						<nav>
+							<ul>
+								<li class="active">
+									<a href="#"><i class="dashboard-ico"></i><span>DASHBOARD</span></a>
+									<ul>
+										<li class="active"><a href="#">General</a></li>
+										<li><a href="#">Financials</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="accounts-ico"></i><span>ACCOUNTS</span></a>
+								</li>
+								<li>
+									<a href="#"><i class="suppliers-ico"></i><span>SUPPLIERS</span></a>
+								</li>
+								<li>
+									<a href="#"><i class="sales-marketing-ico"></i><span>SALES & MARKETING</span></a>
+								</li>
+								<li>
+									<a href="#"><i class="projects-ico"></i><span>PROJECTS</span></a>
+								</li>
+								<li>
+									<a href="#"><i class="tools-ico"></i><span>TOOLS</span></a>
+								</li>
+								<li>
+									<a href="#"><i class="class-society-ico"></i><span>CLASS SOCIETY</span></a>
+								</li>
+								<li>
+									<a href="#"><i class="settings-ico"></i><span>SETTINGS</span></a>
+								</li>
+								<li>
+									<a href="#"><i class="my-profile-ico"></i><span>MY PROFILE</span></a>
+								</li>
+							</ul>
+						</nav>
+					</div>	
+					<div class="main-inward__content">
+						<div class="main-inward__content-section">
+							<div class="fiters-block">
+								<div class="input-wrap select-inward">
+									<select class="js-example-basic-single" style="width: 100%">
+										<option>ALL REGIONS</option>
+									  <option>Option 1</option>
+									 
+									  <option>Option 2</option>
+									</select>
+								</div>
+								<div class="input-wrap select-inward">
+									<select class="js-example-basic-single" style="width: 100%">
+										<option>THIS MONTH</option>
+									  <option>Option 1</option>
+									 
+									  <option>Option 2</option>
+									</select>
+								</div>
+								<div class="input-wrap select-inward">
+									<select class="js-example-basic-single" style="width: 100%">
+										<option>PROJECT MANAGER</option>
+									  <option>Option 1</option>
+									 
+									  <option>Option 2</option>
+									</select>
+								</div>
 							</div>
 						</div>
+						<div class="main-inward__content-section">
+							<div class="difference-info-block">
+								<div class="difference-info difference-info--up">
+									<div class="growth-change">
+										<i class="double-chevron"></i>
+										<span>+20%</span>
+									</div>
+									<div class="difference-info__counter">
+										<span>20</span>
+										<span>New Leads</span>
+									</div>
+									<div class="difference-info__footer">
+									</div>
+								</div>
+								<div class="difference-info difference-info--down">
+									<div class="growth-change">
+										<i class="double-chevron"></i>
+										<span>-20%</span>
+									</div>
+									<div class="difference-info__counter">
+										<span>150</span>
+										<span>Lost Opportunities</span>
+									</div>
+								</div>
+								<div class="difference-info difference-info--up">
+									<div class="growth-change">
+										<i class="double-chevron"></i>
+										<span>+50%</span>
+									</div>
+									<div class="difference-info__counter">
+										<span>200</span>
+										<span>Won Opportunities</span>
+									</div>
+									<div class="difference-info__footer">
+										<span>220 €</span>
+										<span>220 $ </span>
+										<span>220 NOK</span>
+									</div>
+								</div>
+								<div class="difference-info difference-info--down">
+									<div class="growth-change">
+										<i class="double-chevron"></i>
+										<span>-10%</span>
+									</div>
+									<div class="difference-info__counter">
+										<span>35</span>
+										<span>Completed Projects</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-inward__content-section">
+							<div class="projects-charts-wrap">
+								<div class="projects-chart">
+									<h3>PROJECTS STATUS</h3>
+									<div class="projects-chart__chart-cover">
+										<div class="projects-chart__chart">
+											<div class="projects-status-chart-wrap">
+												<div id="projects-status-chart"></div>
+												<div class="center">
+													<i class="chart-ico"></i>
+													<span>2,562</span>
+												</div>
+											</div>
+										</div>
+										<div class="projects-chart__chart-info projects-status-chart-info">
+											<ul>
+												<li><span>Completed</span></li>
+												<li><span>In process</span></li>
+												<li><span>Pending</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="projects-chart">
+									<h3>SERVICE TYPE</h3>
+									<div class="projects-chart__chart-cover">
+										<div class="projects-chart__chart">
+											<div id="service-type-chart"></div>
+										</div>
+										<div class="projects-chart__chart-info service-type-chart-info">
+											<ul>
+												<li><span>Type Approval</span></li>
+												<li><span>Retrofit</span></li>
+												<li><span>Commissioning</span></li>
+												<li><span>Consultancy</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-inward__content-section main-inward__content-section--shadow">
+							<div class="table-inward">
+								<div class="table-inward__head">
+									<h3><i class="head-ico"><i class="zmdi zmdi-chevron-down"></i></i> PROJECTS STATUS</h3>
+								</div>
+								<div class="table-inward__main">
+									
+									<table class="js-table-inward">
+
+										<thead>
+											<tr>
+												<th>Project Title</th>
+												<th>Client</th>
+												<th>Project Type</th>
+												<th>Est. Revenue</th>
+												<th>Total Hours Registered</th>
+												<th>Overdue Tasks</th>
+												<th>Project Manager</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Name</td>
+												<td>Koein</td>
+												<td><span class="circle-mark circle-mark--cyan">Type Approval</span></td>
+												<td>200 $</td>
+												<td>2 H</td>
+												<td><i class="num-round num-round--cyan">2</i></td>
+												<td>Joyce Attoue</td>
+											</tr>
+											<tr>
+												<td>Name</td>
+												<td>Koein</td>
+												<td><span class="circle-mark circle-mark--green">Consultancy</span></td>
+												<td>200 $</td>
+												<td>4 H</td>
+												<td><i class="num-round num-round--cyan">2</i></td>
+												<td>Joyce Attoue</td>
+											</tr>
+											<tr>
+												<td>Name</td>
+												<td>Koein</td>
+												<td><span class="circle-mark circle-mark--gray">Retrofit</span></td>
+												<td>200 $</td>
+												<td>2 H</td>
+												<td><i class="num-round num-round--cyan">2</i></td>
+												<td>Joyce Attoue</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="table-inward table-inward--light">
+								<div class="table-inward__head">
+									<h3><i class="head-ico"><i class="zmdi zmdi-chevron-down"></i></i>OPPORTUNITIES</h3>
+								</div>
+								<div class="table-inward__main">
+									
+									<table class="js-table-inward">
+
+										<thead>
+											<tr>
+												<th>Project Title</th>
+												<th>Client</th>
+												<th>Project Type</th>
+												<th>Est. Revenue</th>
+												<th>Validity Date</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Name</td>
+												<td>Koein</td>
+												<td><span class="circle-mark circle-mark--cyan">Type Approval</span></td>
+												<td>200 $</td>
+												<td>12-11-2019</td>
+											</tr>
+											<tr>
+												<td>Name</td>
+												<td>Koein</td>
+												<td><span class="circle-mark circle-mark--green">Consultancy</span></td>
+												<td>200 $</td>
+												<td>12-11-2019</td>
+											</tr>
+											<tr>
+												<td>Name</td>
+												<td>Koein</td>
+												<td><span class="circle-mark circle-mark--gray">Retrofit</span></td>
+												<td>200 $</td>
+												<td>12-11-2019</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="main-inward__content-section main-inward__content-section--shadow">
+							<div class="table-inward">
+								<div class="table-inward__head">
+									<h3><i class="head-ico"><i class="zmdi zmdi-chevron-down"></i></i>NEW ORDERS</h3>
+								</div>
+								<div class="table-inward__main">
+									
+									<table class="js-table-inward">
+
+										<thead>
+											<tr>
+												<th>Client</th>
+												<th>Email</th>
+												<th>Phone Number</th>
+												<th>Project Type</th>
+												<th>Data Order Placed</th>
+				
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Joyce Attoue</td>
+												<td>Jattoue@koein.com</td>
+												<td>01 266 252</td>
+												<td><span class="circle-mark circle-mark--disabled">Type Approval</span></td>
+												<td>12-11-2019</td>
+											</tr>
+											<tr>
+												<td>Joyce Attoue</td>
+												<td>Jattoue@koein.com</td>
+												<td>01 266 252</td>
+												<td><span class="circle-mark circle-mark--disabled">Consoltancy</span></td>
+												<td>12-11-2019</td>
+											</tr>
+											<tr>
+												<td>Joyce Attoue</td>
+												<td>Jattoue@koein.com</td>
+												<td>01 266 252</td>
+												<td><span class="circle-mark circle-mark--gray">Retrofit</span></td>
+												<td>12-11-2019</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="table-inward table-inward--light">
+								<div class="table-inward__head">
+									<h3><i class="head-ico"><i class="zmdi zmdi-chevron-down"></i></i>NEW SHIPS</h3>
+								</div>
+								<div class="table-inward__main">
+									
+									<table class="js-table-inward">
+
+										<thead>
+											<tr>
+												<th>Client</th>
+												<th>Ship Name</th>
+												<th>Ship Type</th>
+												<th>MO Number</th>
+												<th>BWMS</th>
+												<th>Ballast Pump Capacity</th>
+												<th>BWDS Compliance</th>
+												<th>D-2 Compliance</th>
+				
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Joyce Attoue</td>
+												<td>Name 1</td>
+												<td>Ship Type 1</td>
+												<td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+												<td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+												<td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+												<td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+												<td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+											</tr>
+											<tr>
+												<td>Joyce Attoue</td>
+												<td>Name 1</td>
+												<td>Ship Type 1</td>
+												<td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+												<td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+												<td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+												<td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+												<td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+											</tr>
+											<tr>
+												<td>Joyce Attoue</td>
+												<td>Name 1</td>
+												<td>Ship Type 1</td>
+												<td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+												<td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+												<td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+												<td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+												<td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="table-inward">
+								<div class="table-inward__head">
+									<h3><i class="head-ico"><i class="zmdi zmdi-chevron-down"></i></i>NEW CLIENTS / USERS</h3>
+								</div>
+								<div class="table-inward__main">
+									
+									<table class="js-table-inward">
+
+										<thead>
+											<tr>
+												<th>Company Name</th>
+												<th>Country</th>
+												<th>Phone Number</th>
+												<th>Url</th>
+												<th>Primary Contact</th>
+												<th>Date Of Registration</th>
+				
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Joyce Attoue</td>
+												<td>Lebanon</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">www.bwm.no</a></td>
+												<td>Joyce Attoue</td>
+												<td>12-11-2019</td>
+											</tr>
+											<tr>
+												<td>Joyce Attoue</td>
+												<td>Lebanon</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">www.bwm.no</a></td>
+												<td>Joyce Attoue</td>
+												<td>12-11-2019</td>
+											</tr>
+											<tr>
+												<td>Joyce Attoue</td>
+												<td>Lebanon</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">www.bwm.no</a></td>
+												<td>Joyce Attoue</td>
+												<td>12-11-2019</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+
 					</div>
 				</div>
 			</div>
@@ -100,5 +441,6 @@
 
 	</div>
 	@@include('_include/_footer-assets.html') 
+
 </body>
 </html>

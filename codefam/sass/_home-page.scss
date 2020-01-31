@@ -587,6 +587,12 @@
 			opacity: 1;
 			color: #333333;
 		}
+
+		&:focus {
+			&::placeholder {
+				opacity: 0;
+			}
+		}
 	}
 
 	.select2-container--default .select2-selection--single {

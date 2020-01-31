@@ -46,7 +46,7 @@
 
 	}
 
-	&__title {
+	h2 {
 		color: #222222;
 		font-size: 27px;
 		line-height: 23px;
@@ -54,7 +54,7 @@
 		text-align: center;
 	}
 
-	&__desc {
+	h5 {
 		margin-bottom: 35px;
 		color: rgba(#222222, 0.67);
 		font-size: 15px;
@@ -77,19 +77,21 @@
 
 	&__footer {
 		margin-top: 25px;
-	}
 
-	&__footer-desc {
-		font-size: 15px;
-		line-height: 18px;
-		color: #ffffff;
-		text-align: center;
+		p {
+			font-size: 15px;
+			line-height: 18px;
+			color: #ffffff;
+			text-align: center;
 
-		a {
-			text-decoration: underline;
-			color: #fff;
+			a {
+				text-decoration: underline;
+				color: #fff;
+			}
 		}
 	}
+
+	
 
 	&--style {
 		max-width: 800px;
@@ -101,7 +103,7 @@
 
 	&--forgot-pass {
 
-		.login-pass__title {
+		h2 {
 			color: #593e8c;
 			margin-bottom: 15px;
 			margin-top: 30px;
@@ -127,7 +129,7 @@
 			justify-content: center;
 		}
 		
-		.login-pass__title {
+		h2 {
 			margin: 0;
 			color: #593e8c;
 			font-size: 27px;
@@ -138,7 +140,7 @@
 	&--reset-pass {
 		max-width: 800px;
 
-		.login-pass__title {
+		h2 {
 			color: #593e8c;
 			font-weight: bold;
 			margin-top: 30px;
@@ -156,7 +158,7 @@
 			justify-content: center;
 		}
 		
-		.login-pass__title {
+		h2 {
 			margin: 0;
 			margin-bottom: 80px;
 			color: #593e8c;

@@ -17,11 +17,17 @@ function slidersInit() {
 		var mySwiper = new Swiper ('.js-latest-news-slider', {
 			slidesPerView: 1,
 			spaceBetween: 30,
+			loop: true,
 			keyboard: {
 		    enabled: true,
 		  },
+		  autoplay: {
+		    delay: 4500,
+		    disableOnInteraction: false,
+		  },
 	    pagination: {
 	      el: '.swiper-pagination',
+	      clickable: true,
 	    },
 	    breakpoints: {
 
@@ -43,11 +49,17 @@ function slidersInit() {
 	if ($('.js-we-work-slider').length) {
 		var mySwiper = new Swiper ('.js-we-work-slider', {
 			slidesPerView: 1,
+			loop: true,
 			keyboard: {
 		    enabled: true,
 		  },
+		  autoplay: {
+		    delay: 4500,
+		     disableOnInteraction: false,
+		  },
 	    pagination: {
 	      el: '.swiper-pagination',
+	      clickable: true,
 	    },
 	    breakpoints: {
 
