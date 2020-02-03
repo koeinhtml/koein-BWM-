@@ -43,7 +43,7 @@
 				top: 100%;
 				right: 0;
 				background: linear-gradient(to top, rgba(#000, 1), rgba(#000, 0.0) 91%);
-				padding: rem(25) rem(50);
+				padding: rem(25) rem(30);
 				right: rem(-50);
 				z-index: 4;
 
@@ -60,7 +60,7 @@
 				}
 
 				@media (max-width: 991px) {
-					margin: rem(10) 0;
+					margin: 0;
 					text-align: right;
 				}
 
@@ -76,7 +76,9 @@
 					}
 
 					@media (max-width: 991px) {
+						display: block;
 						text-align: right;
+						padding: rem(5) rem(20);
 					}
 
 

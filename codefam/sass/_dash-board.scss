@@ -101,12 +101,6 @@
 
 .projects-chart {
 	
-	h3 {
-		font-size: 22px;
-		line-height: 26px;
-		font-weight: bold;
-		margin-bottom: 20px;
-	}
 
 	&__chart-cover {
 		border: 2px solid #f5f5f5;
@@ -253,7 +247,8 @@
 }
 
 #projects-status-chart {
-	width: 260px;
+	max-width: 260px;
+	width: 100%;
 	height: 260px;
 	padding-top: 13px;
 
@@ -261,7 +256,8 @@
 }
 
 #service-type-chart {
-	width: 270px;
+	max-width: 270px;
+	width: 100%;
 	height: 270px;
 	padding-top: 13px;
 }
@@ -460,4 +456,61 @@
 .fa-check-square {
 	color: #6fc4d2;
 	font-size: 20px;
+}
+
+#active-user-chart {
+	max-width: 700px;
+	width: 100%;
+	height: 325px;
+}
+
+.active-user-chart {
+	.projects-chart__chart-cover {
+		height: auto;
+		position: relative;
+	}
+	.domain, .tick line {
+		display: none;
+	}
+
+	&__legend {
+		position: absolute;
+		top: 0;
+		left: 0;
+		max-width: 100%;
+		z-index: 5;
+		padding: 25px;
+		p {
+			display: inline-block;
+			padding-right: 50px;
+		}
+		span {
+			color: #666666;
+			font-size: 15px;
+			line-height: 20px;
+			padding-right: 25px;
+			padding-left: 20px;
+
+			&:nth-of-type(1) {
+				&:before {
+					border-color: #417dc4;
+				}
+			}
+			&:nth-of-type(2) {
+				&:before {
+					border-color: #644499;
+				}
+			}
+			&:nth-of-type(3) {
+				&:before {
+					border-color: #3dad97;
+				}
+			}
+			&:nth-of-type(4) {
+				&:before {
+					border-color: #6fc4d2;
+				}
+			}
+		}
+	}
 }

@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	projectsStatusChart();
 	serviceTypeChart();
+	activeUserChart();
 });
 
 function projectsStatusChart() {
@@ -8,9 +9,9 @@ function projectsStatusChart() {
 		bindto: '#projects-status-chart',
     data: {
         columns: [
-            ['data1', 30],
-            ['data2', 40],
-            ['data3', 30],
+            ['Completed', 30],
+            ['In process', 40],
+            ['Pending', 30],
         ],
         type : 'donut',
     },
@@ -36,10 +37,10 @@ function serviceTypeChart() {
     data: {
         // iris data from R
         columns: [
-            ['data1', 20],
-            ['data2', 30],
-            ['data3', 20],
-            ['data4', 30],
+            ['Type Approval', 20],
+            ['Retrofit', 30],
+            ['Commissioning', 20],
+            ['Consultancy', 30],
         ],
         type : 'pie',
     },
@@ -50,6 +51,52 @@ function serviceTypeChart() {
 		  hide: true,
 		},
 		
+	});
+
+}
+function activeUserChart() {
+	var chart = c3.generate({
+		bindto: '#active-user-chart',
+		data: {
+			x: 'x',
+			columns: [
+				['x', '2019-06-04', '2019-06-05', '2019-06-06', '2019-06-07', '2019-06-08', '2019-06-09', '2019-06-10'],
+				['W.Wannous', 8, 2, 4, 2, 7, 2],
+				['JAttoue', 6, 5, 6, 4, 7, 3],
+				['C.Adourian', 4, 7, 2, 5, 1, 7],
+				['Marie.W', 4, 2, 7, 2, 5, 1]
+			],
+			type: 'spline',
+		},
+		 color: {
+		  pattern: ['#417dc4', '#644499', '#3dad97', '#6fc4d2'],
+		},
+		grid: {
+      x: {
+          show: false
+      },
+      y: {
+          show: true
+      }
+    },
+    legend: {
+			hide: true,
+		},
+		padding: {
+		  right: 20,
+		  top: 60
+		},
+		axis : {
+			x : {
+				type : 'timeseries',
+				tick: {
+          format: '%d-%m-%Y' // format string is also available for timeseries data
+       	},
+      },
+    },
+    point: {
+		  show: false
+		}
 	});
 
 }

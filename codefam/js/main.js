@@ -2,6 +2,7 @@ $(document).ready(function() {
 	slidersInit();
 	selectInit();
 	mobMenu();
+	mobMenuInward();
 });
 
 function slidersInit() {
@@ -25,6 +26,8 @@ function slidersInit() {
 		    delay: 4500,
 		    disableOnInteraction: false,
 		  },
+		  longSwipes: false,
+		  longSwipesRatio: 0.2,
 	    pagination: {
 	      el: '.swiper-pagination',
 	      clickable: true,
@@ -53,6 +56,8 @@ function slidersInit() {
 			keyboard: {
 		    enabled: true,
 		  },
+		  longSwipes: false,
+		  longSwipesRatio: 0.2,
 		  autoplay: {
 		    delay: 4500,
 		     disableOnInteraction: false,
@@ -80,7 +85,7 @@ function slidersInit() {
 }
 
 function selectInit() {
-	$('.js-example-basic-single').select2({
+	$('.js-select-single').select2({
 		width: 'resolve',
 	});
 }
@@ -97,6 +102,13 @@ function mobMenu() {
 			$(".js-mob-menu").addClass("show");
 			$(this).addClass("close-menu");
 		}
+		
+	});
+}
+function mobMenuInward() {
+	$(".js-btn-menu-inward").on("click", function(e) {
+		e.preventDefault();
+		$(".js-side-menu").toggleClass("collapse");
 		
 	});
 }

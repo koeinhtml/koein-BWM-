@@ -16,7 +16,16 @@
   &__side {
     background-color: #454545;
     flex-basis: 210px;
+    transition: all .3s;
+    overflow: hidden;
+
+    &.collapse {
+      flex-basis: 0px;
+      width: 0px;
+    }
   }
+  
+
   &__content {
     padding: 30px 50px;
     flex-grow: 1;
@@ -24,6 +33,12 @@
 
   &__content-section {
     margin-bottom: 50px;
+    h3 {
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
 
     &--shadow {
       box-shadow: 0 0 10px 5px rgba(#eeeeee, 1);
@@ -135,6 +150,10 @@
       }
     }
   }
+}
+
+.side-menu-inward {
+  width: 210px;
 }
 
 .bdt {
