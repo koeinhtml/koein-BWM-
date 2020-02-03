@@ -1,5 +1,5 @@
 .offset-header {
-	padding-top: 150px;
+	padding-top: rem(150);
 }
 
 .section-title {
@@ -71,24 +71,24 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0 35px;
+	padding: 0 rem(35);
 	width: auto;
 	margin: 0 auto;
-	margin-top: 40px;
-	margin-bottom: 25px;
-	height: 45px;
-	border-radius: 5px;
+	margin-top: rem(40);
+	margin-bottom: rem(25);
+	height: rem(45);
+	border-radius: rem(5);
 	background-color: #6fc4d2;
 	cursor: pointer;
 	border: none;
 	text-transform: uppercase;
 	color: #fff;
-	font-size: 15px;
-	box-shadow: 0 0 14px 0 rgba(#000, 0.05);
+	font-size: rem(15);
+	box-shadow: 0 0 rem(14) 0 rgba(#000, 0.05);
 
 	&:hover {
 		text-decoration: none;
 		color: #fff;
-		box-shadow: 0 0 20px 0 rgba(#000, 0.1);
+		box-shadow: 0 0 rem(20) 0 rgba(#000, 0.1);
 	}
 }

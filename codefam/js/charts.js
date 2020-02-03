@@ -2,6 +2,7 @@ $(document).ready(function() {
 	projectsStatusChart();
 	serviceTypeChart();
 	activeUserChart();
+	salesWeightedCustomerChart();
 });
 
 function projectsStatusChart() {
@@ -60,7 +61,7 @@ function activeUserChart() {
 		data: {
 			x: 'x',
 			columns: [
-				['x', '2019-06-04', '2019-06-05', '2019-06-06', '2019-06-07', '2019-06-08', '2019-06-09', '2019-06-10'],
+				['x', '2019-06-04', '2019-06-05', '2019-06-06', '2019-06-07', '2019-06-08', '2019-06-09'],
 				['W.Wannous', 8, 2, 4, 2, 7, 2],
 				['JAttoue', 6, 5, 6, 4, 7, 3],
 				['C.Adourian', 4, 7, 2, 5, 1, 7],
@@ -73,25 +74,32 @@ function activeUserChart() {
 		},
 		grid: {
       x: {
-          show: false
+        show: false
       },
       y: {
-          show: true
+        show: true
       }
     },
     legend: {
 			hide: true,
 		},
 		padding: {
-		  right: 20,
-		  top: 60
+		  right: 40,
 		},
 		axis : {
 			x : {
 				type : 'timeseries',
+				
 				tick: {
           format: '%d-%m-%Y' // format string is also available for timeseries data
        	},
+      },
+      y : {
+				label: {
+					text: 'Hours',
+					position: 'outer-right'
+				}
+				
       },
     },
     point: {
@@ -99,4 +107,29 @@ function activeUserChart() {
 		}
 	});
 
+}
+
+function salesWeightedCustomerChart() {
+	var chart = c3.generate({
+		bindto: '#sales-weighted-customer-chart',
+		data: {
+			columns: [
+			['data1', 30, 20, 50, 40, 60, 50],
+			['data2', 200, 130, 90, 240, 130, 220],
+			['data3', 300, 200, 160, 400, 250, 250],
+			['data4', 200, 130, 90, 240, 130, 220],
+			['data5', 130, 120, 150, 140, 160, 150],
+			['data6', 90, 70, 20, 50, 60, 120],
+			],
+			type: 'bar',
+			types: {
+				data3: 'spline',
+				data4: 'line',
+				data6: 'area',
+			},
+			groups: [
+			['data1','data2']
+			]
+		}
+	});
 }

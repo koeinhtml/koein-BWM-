@@ -1,6 +1,6 @@
 .header-inward {
-	padding: 0 15px;
-	height: 50px;
+	padding: 0 rem(15);
+	height: rem(50);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -11,16 +11,16 @@
 	}
 
 	&__page-title {
-		padding: 0 25px;
-		font-size: 16px;
-		line-height: 19px;
+		padding: 0 rem(25);
+		font-size: rem(16);
+		line-height: rem(19);
 		color: #454545;
 		font-weight: 500;
 	}
 }
 
 .btn-menu-inward {
-	font-size: 18px;
+	font-size: rem(18);
 	color: #454545;
 }
 .notifications {
@@ -29,20 +29,20 @@
 }
 
 .notification {
-	font-size: 20px;
+	font-size: rem(20);
 	color: #454545;
-	margin-left: 35px;
+	margin-left: rem(35);
 	position: relative;
-	padding-top: 11px;
-	padding-right: 11px;
+	padding-top: rem(11);
+	padding-right: rem(11);
 	display: block;
 
 	&__num {
-		padding: 4px 6px;
+		padding: rem(4) rem(6);
 		background-color: #999999;
-		border-radius: 3px;
+		border-radius: rem(3);
 		color: #fff;
-		font-size: 12px;
+		font-size: rem(12);
 		line-height: 1;
 		position: absolute;
 		right: 0;

@@ -1,7 +1,7 @@
 .login-wrapper {
 	background: url("../assets/images/bg-3.jpg") no-repeat 50% / cover;
 	min-height: 100vh;
-	padding-bottom: 25px;
+	padding-bottom: rem(25);
 
 	.container {
 		height: 100%;
@@ -9,7 +9,7 @@
 }
 
 .login-pass {
-	max-width: 680px;
+	max-width: rem(680);
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
@@ -18,52 +18,52 @@
 
 
 	&__content-wrap {
-		min-height: calc(100vh - 180px);
+		min-height: calc(100vh - #{rem(180)});
 		display: flex;
 		flex-flow: column;
 		justify-content: center;
 	}
 
 	&__head {
-		padding: 15px 0;
-		margin-bottom: 10px;
-		min-height: 1px;
+		padding: rem(15) 0;
+		margin-bottom: rem(10);
+		min-height: rem(1);
 	}
 
 	&__logo {
-		max-width: 155px;
+		max-width: rem(155);
 		margin: 0 auto;
 		display: block;
 	}
 
 	&__main {
 		background: #ffffff;
-		padding: 35px 70px;
+		padding: rem(35) rem(70);
 
 		@media (max-width: 575px) {
-			padding: 35px; 
+			padding: rem(35); 
 		}
 
 	}
 
 	h2 {
 		color: #222222;
-		font-size: 27px;
-		line-height: 23px;
-		margin-bottom: 30px;
+		font-size: rem(27);
+		line-height: rem(23);
+		margin-bottom: rem(30);
 		text-align: center;
 	}
 
 	h5 {
-		margin-bottom: 35px;
+		margin-bottom: rem(35);
 		color: rgba(#222222, 0.67);
-		font-size: 15px;
-		line-height: 23px;
+		font-size: rem(15);
+		line-height: rem(23);
 		text-align: center;
 	}
 
 	.login-form {
-		margin-top: 60px;
+		margin-top: rem(60);
 
 		@media (max-width: 575px) {
 			margin-top: 0;
@@ -71,16 +71,16 @@
 	}
 
 	.btn {
-		max-width: 270px;
+		max-width: rem(270);
 		width: 100%;
 	}
 
 	&__footer {
-		margin-top: 25px;
+		margin-top: rem(25);
 
 		p {
-			font-size: 15px;
-			line-height: 18px;
+			font-size: rem(15);
+			line-height: rem(18);
 			color: #ffffff;
 			text-align: center;
 
@@ -94,10 +94,10 @@
 	
 
 	&--style {
-		max-width: 800px;
+		max-width: rem(800);
 
 		.login-pass__main {
-			box-shadow: 0 0 5px 3px rgba(#000, 0.72);
+			box-shadow: 0 0 rem(5) rem(3) rgba(#000, 0.72);
 		}
 	}
 
@@ -105,24 +105,24 @@
 
 		h2 {
 			color: #593e8c;
-			margin-bottom: 15px;
-			margin-top: 30px;
+			margin-bottom: rem(15);
+			margin-top: rem(30);
 		}
 
 		button {
-			margin-top: 65px !important;
+			margin-top: rem(65) !important;
 		}
 
 		.login-form {
-			margin-top: 40px !important;
+			margin-top: rem(40) !important;
 		}
 	}
 
 	&--result {
-		max-width: 800px;
+		max-width: rem(800);
 
 		.login-pass__main {
-			min-height: 420px;
+			min-height: rem(420);
 			display: flex;
 			flex-flow: column;
 			align-items: center;
@@ -132,26 +132,26 @@
 		h2 {
 			margin: 0;
 			color: #593e8c;
-			font-size: 27px;
-			line-height: 32px;
+			font-size: rem(27);
+			line-height: rem(32);
 		}
 	}
 
 	&--reset-pass {
-		max-width: 800px;
+		max-width: rem(800);
 
 		h2 {
 			color: #593e8c;
 			font-weight: bold;
-			margin-top: 30px;
+			margin-top: rem(30);
 		}
 	}
 
 	&--result-pass {
-		max-width: 800px;
+		max-width: rem(800);
 
 		.login-pass__main {
-			min-height: 420px;
+			min-height: rem(420);
 			display: flex;
 			flex-flow: column;
 			align-items: center;
@@ -160,10 +160,10 @@
 		
 		h2 {
 			margin: 0;
-			margin-bottom: 80px;
+			margin-bottom: rem(80);
 			color: #593e8c;
-			font-size: 27px;
-			line-height: 32px;
+			font-size: rem(27);
+			line-height: rem(32);
 		}
 
 		.btn {
@@ -174,14 +174,14 @@
 }
 
 .login-form {
-	max-width: 330px;
+	max-width: rem(330);
 	width: 100%;
 	margin: 0 auto;
 
 	label {
 		color: #222222;
-		font-size: 13px;
-		line-height: 28px;
+		font-size: rem(13);
+		line-height: rem(28);
 		display: block;
 	}
 
@@ -190,11 +190,11 @@
 	select {
 		border: none;
 		background: #f3f3f3;
-		height: 45px;
-		border-radius: 3px;
+		height: rem(45);
+		border-radius: rem(3);
 		display: block;
 		width: 100%;
-		padding: 0 15px;
+		padding: 0 rem(15);
 		outline: none;
 		font-family: 'MyriadPro';
 		color: #333333;
@@ -209,15 +209,15 @@
 
 	&__link {
 		color: rgba(#222222, 0.55);
-		font-size: 13px;
-		line-height: 28px;
+		font-size: rem(13);
+		line-height: rem(28);
 		display: block;
-		margin-top: 10px;
+		margin-top: rem(10);
 		text-decoration: underline;
 	}
 
 	.input-wrap {
-		margin-bottom: 25px;
+		margin-bottom: rem(25);
 		width: 100%;
 
 		&:last-of-type {

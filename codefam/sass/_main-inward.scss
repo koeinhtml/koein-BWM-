@@ -4,44 +4,76 @@
 
 .main-inward {
   &__wrap {
-    padding: 0 15px;
-    padding-bottom: 15px;
+    padding: 0 rem(15);
+    padding-bottom: rem(15);
+
+    @media (max-width: 991px) {
+      padding: 0;
+    }
   }
 
   &__cover {
     display: flex;
-    box-shadow: 0 0 10px 3px rgba(#000000, .2);
+    box-shadow: 0 0 rem(10) rem(3) rgba(#000000, .2);
+    position: relative;
   }
 
   &__side {
     background-color: #454545;
-    flex-basis: 210px;
+    width: rem(0);
     transition: all .3s;
     overflow: hidden;
+    flex-shrink: 0;
 
-    &.collapse {
-      flex-basis: 0px;
-      width: 0px;
+    @media (max-width: 991.98px) {
+      width: rem(210);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      height: 100%;
+    }
+
+    &.show {
+      width: rem(210);
+
+      @media (max-width: 991.98px) {
+        width: 0;
+      }
     }
   }
   
 
   &__content {
-    padding: 30px 50px;
+    padding: rem(30) rem(50);
     flex-grow: 1;
+    overflow: auto;
+
+    @media (max-width: 991px) {
+      padding: rem(30);
+    }
+
+    @media (max-width: 767px) {
+      padding: rem(30) rem(15);
+    }
   }
 
   &__content-section {
-    margin-bottom: 50px;
+    margin-bottom: rem(30);
+
+    &.mb-50 {
+      margin-bottom: rem(50);
+    }
+
     h3 {
-      font-size: 22px;
-      line-height: 26px;
+      font-size: rem(22);
+      line-height: rem(26);
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: rem(20);
     }
 
     &--shadow {
-      box-shadow: 0 0 10px 5px rgba(#eeeeee, 1);
+      box-shadow: 0 0 rem(10) rem(5) rgba(#eeeeee, 1);
     }
 
     &:last-of-type {
@@ -52,13 +84,13 @@
   }
   &__side-logo {
     display: block;
-    max-width: 116px;
-    margin: 20px auto;
+    width: rem(116);
+    margin: rem(20) auto;
   }
 
   nav {
-    margin-top: 30px;
-    padding-bottom: 30px;
+    margin-top: rem(30);
+    padding-bottom: rem(30);
     color: #ffffff;
 
     ul {
@@ -73,7 +105,7 @@
 
      > ul {
        > li {
-        border-bottom: 1px solid #575757;
+        border-bottom: rem(1) solid #575757;
 
         &:last-child {
           border-bottom: none;
@@ -96,16 +128,16 @@
           }
         }
          > a {
-          font-size: 13px;
-          line-height: 16px;
+          font-size: rem(13);
+          line-height: rem(16);
           position: relative;
-          height: 60px;
-          padding-left: 65px;
+          height: rem(60);
+          padding-left: rem(65);
 
           i {
             position: absolute;
             top: 50%;
-            left: 30px;
+            left: rem(30);
             transform: translate(0, -50%);
           }
 
@@ -114,7 +146,7 @@
             top: 0;
             left: 0;
             display: none;
-            width: 8px;
+            width: rem(8);
             height: 100%;
             content: "";
             background-color: #6fc4d2;
@@ -122,11 +154,11 @@
         }
         & > ul {
           display: none;
-          padding: 10px 25px;
+          padding: rem(10) rem(25);
           background: #515151;
 
            > li {
-            border-bottom: 1px solid #575757;
+            border-bottom: rem(1) solid #575757;
 
             &:last-child {
               border-bottom: none;
@@ -140,9 +172,9 @@
               }
             }
              > a {
-              font-size: 14px;
-              line-height: 16px;
-              height: 50px;
+              font-size: rem(14);
+              line-height: rem(16);
+              height: rem(50);
               color: #ffffff;
             }
           }
@@ -153,11 +185,11 @@
 }
 
 .side-menu-inward {
-  width: 210px;
+  width: rem(210);
 }
 
 .bdt {
-  border-top: 10px solid;
+  border-top: rem(10) solid;
   border-color: #644499;
 }
 
@@ -165,22 +197,31 @@
 
 .select-inward {
   .select2-container--default .select2-selection--single {
-    height: 70px;
-    border: 1px solid #eeeeee;
-    border-radius: 0px;
+    height: rem(70);
+    border: rem(1) solid #eeeeee;
+    border-radius: rem(0);
+    margin: 0;
+
+    @media (max-width: 1199px) {
+      height: rem(50);
+    }
   }
   .select2-container--default .select2-selection--single .select2-selection__rendered {
-    line-height: 70px;
+    line-height: rem(70);
     color: #543981;
+
+    @media (max-width: 1199px) {
+      line-height: rem(50);
+    }
   }
   .select2-container--default .select2-selection--single .select2-selection__arrow b {
     display: inline-block;
-    margin-top: rem(-5);
-    margin-left: rem(-3);
+    margin-top: 0;
+    margin-left: 0;
     padding: rem(4);
-    transform: rotate(45deg);
     border: solid #333333;
     border-width: 0 rem(2) rem(2) 0;
+    transform: translate(-50%, -70%) rotate(45deg);
   }
 
   .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
@@ -188,17 +229,27 @@
     margin-top: rem(0);
     margin-left: rem(-3);
     padding: rem(4);
-    transform: rotate(225deg);
+    transform: translate(-20%, -30%) rotate(225deg);
     border: solid #333333;
     border-width: 0 rem(2) rem(2) 0;
   }
   .select2-container--default .select2-selection--single .select2-selection__arrow {
-    top: 22px;
-    right: 29px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: rem(29);
+
+    @media (max-width: 1199px) {
+      right: rem(10);
+    }
   }
   .select2-container .select2-selection--single .select2-selection__rendered {
-    padding-right: 75px;
-    padding-left: 50px;
+    padding-right: rem(75);
+    padding-left: rem(50);
+
+    @media (max-width: 1199px) {
+      padding-right: rem(35);
+      padding-left: rem(15);
+    }
   }
 }
 

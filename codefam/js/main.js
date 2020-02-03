@@ -108,7 +108,7 @@ function mobMenu() {
 function mobMenuInward() {
 	$(".js-btn-menu-inward").on("click", function(e) {
 		e.preventDefault();
-		$(".js-side-menu").toggleClass("collapse");
+		$(".js-side-menu").toggleClass("show");
 		
 	});
 }
