@@ -9,6 +9,7 @@
 	@media (max-width: 767px) {
 		padding: rem(15) 0;
 	}
+
 	&__cover {
 		display: flex;
 		align-items: center;
@@ -24,6 +25,7 @@
 
 		@media (max-width: 991px) {
 			max-width: rem(130);
+			margin-right: rem(10);
 		}
 	}
 	&__nav {
@@ -42,7 +44,7 @@
 				position: absolute;
 				top: 100%;
 				right: 0;
-				background: linear-gradient(to top, rgba(#000, 1), rgba(#000, 0.0) 91%);
+				background: linear-gradient(to top, rgba(#000, 0.9) 65% , rgba(#000, 0.0) 95%);
 				padding: rem(25) rem(30);
 				right: rem(-50);
 				z-index: 4;
@@ -66,8 +68,8 @@
 
 				a {
 					color: #fff;
-					font-size: rem(18);
-					line-height: rem(21);
+					font-size: rem(15);
+					line-height: rem(18);
 					text-transform: uppercase;
 					padding: rem(20) 0;
 

@@ -1,0 +1,145 @@
+.section-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: rem(1) solid #efefef;
+
+	@media (max-width: 575px) {
+		flex-flow: column;	
+		align-items: flex-start;
+	}
+
+	&.pd-20-50 {
+		padding: rem(20) rem(50);
+
+		@media (max-width: 991px) {
+      padding: rem(20) rem(15);
+    } 
+	}
+
+	&__col {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@media (max-width: 575px) {
+			padding: rem(10) 0;
+			width: 100%;
+		}
+
+		.input-wrap {
+			margin: 0 rem(10);
+		}
+	}
+
+	&__dropdown-cover {
+		display: flex;
+	}
+
+}
+
+.search-inward {
+	cursor: pointer;
+	position: relative;
+	margin-left: rem(25);
+	background: #fff;
+
+	&:hover {
+		input {
+			width: rem(250);
+			opacity: 1;
+			padding: 0 rem(10);
+			padding-right: rem(30);
+		}
+	}
+
+	form {
+		display: block;
+	}
+
+	input {
+		color: #666666;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 0;
+		background: #fff;
+		border: 1px solid #666666;
+		box-shadow: none;
+		z-index: 1;
+		height: 100%;
+		opacity: 0;
+		transition: all .5s;
+
+	}
+
+	button {
+		display: flex;
+		width: rem(25);
+		height: rem(25);
+		align-items: center;
+		justify-content: center;
+		border: none;
+		background: none;
+		outline: none;
+		cursor: pointer;
+		color: #666666;
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		z-index: 2;
+
+		i {
+			font-size: rem(14);
+		}
+	}
+}
+
+.table-menu {
+	position: relative;
+	cursor: pointer;
+	margin: rem(-5);
+
+
+	&:hover {
+		ul {
+	
+		}
+	}
+	&__btn {
+		display: block;
+		font-size: rem(14);
+		color: #aaaaaa;
+		padding: rem(5);
+	}
+
+	ul {
+		display: none;
+		position: absolute;
+		top: 0;
+		transform: translate(-100%, -100%);
+		background-color: #fff;
+		border: rem(1) solid #666666;
+		width: rem(180);
+		a {
+			padding: rem(5) rem(15);
+			color: #666666;
+		}
+	}
+}
+
+.td-before-gray {
+
+	td:first-child {
+		border-left-color: #454545 !important;
+	}
+}
+
+
+
+.table-menu-cover {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

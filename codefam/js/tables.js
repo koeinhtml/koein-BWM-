@@ -4,7 +4,6 @@ $(document).ready(function() {
 
 function tableInit() {
 	$(".js-table-inward").kendoGrid({
-		// height: 550,
 		sortable: true,
 		filterable: true,
 		scrollable: false,
@@ -13,6 +12,7 @@ function tableInit() {
 			allowUnsort: true,
 			showIndexes: true
 		},
+		columnMenu: true,
 		
 	});
 }

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('_include/_head-assets.html', {
+		"title": "08_dashboard"
+	}) 
+
+	
+</head>
+<body>
+	<div class="wrapper wrapper-inward">
+		<!-- .header -->
+		@@include('_include/_header-inward.html', {
+			"title": "Dashboard"
+		})
+		<!-- /.header -->
+		
+		<main class="main-inward">
+			<div class="main-inward__wrap">
+				<div class="main-inward__cover bdt bdt--color-1">
+					<div class="main-inward__side js-side-menu show">
+						<div class="side-menu-inward">
+							<a href="01_home.html" class="main-inward__side-logo">
+								<img src="../assets/logo.png" alt="">
+							</a>
+							<nav>
+								<ul>
+									<li>
+										<a href="08_dashboard.html"><i class="dashboard-ico"></i><span>DASHBOARD</span></a>
+									</li>
+									<li>
+										<a href="#"><i class="accounts-ico"></i><span>ACCOUNTS</span></a>
+									</li>
+									<li class="active">
+										<a href="10_suppliers.html"><i class="suppliers-ico"></i><span>SUPPLIERS</span></a>
+									</li>
+									<li>
+										<a href="#"><i class="sales-marketing-ico"></i><span>SALES & MARKETING</span></a>
+									</li>
+									<li>
+										<a href="#"><i class="projects-ico"></i><span>PROJECTS</span></a>
+									</li>
+									<li>
+										<a href="#"><i class="tools-ico"></i><span>TOOLS</span></a>
+									</li>
+									<li>
+										<a href="#"><i class="class-society-ico"></i><span>CLASS SOCIETY</span></a>
+									</li>
+									<li>
+										<a href="#"><i class="settings-ico"></i><span>SETTINGS</span></a>
+									</li>
+									<li>
+										<a href="03_login.html"><i class="my-profile-ico"></i><span>MY PROFILE</span></a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>	
+					<div class="main-inward__content">
+						<div class="section-head pd-20-50">
+							<div class="dropdown-inward">
+								<div class="dropdown-inward__btn">
+									<span class="dropdown-inward__btn-title">Action</span>
+									<span class="dropdown-inward__btn-caret"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+								</div>
+								<ul>
+									<li>
+										<a href="#">ADD</a>
+									</li>
+									<li>
+										<a href="#">VIEV</a>
+									</li>
+								</ul>
+							</div>
+							<div class="section-head__col">
+								<div class="section-head__dropdown-cover">
+									<div class="input-wrap select-head-inward">
+										<select class="js-select-single" style="width: 100%">
+											<option>A to Z</option>
+										  <option>A to Z</option>
+										  <option>A to Z</option>
+										</select>
+									</div>
+									<div class="input-wrap select-head-inward">
+										<select class="js-select-single" style="width: 100%">
+											<option>Companies</option>
+										  <option>Companies</option>
+										  <option>Companies</option>
+										</select>
+									</div>
+								</div>
+								<div class="search-inward js-search-inward">
+									<form>
+										<input type="search">
+										<button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+									</form>
+								</div>
+
+
+							</div>
+						</div>
+		
+						<div class="main-inward__content-section pd-0-50">
+							<div class="table-inward pd-0">
+								<div class="table-inward__main">
+									<table class="js-table-inward td-before-gray">
+										<thead>
+											<tr>
+												<th>Name Of Supplier</th>
+												<th>Type Of Supplier</th>
+												<th>Headquarter Location</th>
+												<th>Branch Offices</th>
+												<th>Phone Number</th>
+												<th>Website</th>
+												<th>Projects</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--cyan">Type Approval</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--green">Consultancy</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--gray">Retrofit</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--cyan">Type Approval</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--green">Consultancy</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--gray">Retrofit</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--cyan">Type Approval</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--green">Consultancy</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--gray">Retrofit</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--cyan">Type Approval</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--green">Consultancy</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--gray">Retrofit</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--cyan">Type Approval</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--green">Consultancy</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--gray">Retrofit</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--cyan">Type Approval</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--green">Consultancy</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--gray">Retrofit</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--cyan">Type Approval</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--green">Consultancy</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--gray">Retrofit</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--cyan">Type Approval</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--green">Consultancy</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Joyce Att</td>
+												<td><span class="circle-mark circle-mark--gray">Retrofit</span></td>
+												<td>Beirut, Lebanon</td>
+												<td>Beirut, Shanghai</td>
+												<td>01 266 252</td>
+												<td><a href="www.bwm.no">bwm.no</a></td>
+												<td>
+													<div class="table-menu-cover">
+														<i class="num-round num-round--cyan">2</i>
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+						
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+
+	</div>
+	@@include('_include/_footer-assets.html') 
+
+</body>
+</html>

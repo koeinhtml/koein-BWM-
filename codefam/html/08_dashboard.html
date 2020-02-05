@@ -34,7 +34,7 @@
   <link rel="stylesheet" href="../libs/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="../libs/select2/css/select2.min.css">
   <link rel="stylesheet" href="../libs/c3-master/c3.min.css">
-  <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2020.1.114/styles/kendo.common.min.css">
+  <link rel="stylesheet" href="../libs/kendo-ui/kendo.default-v2.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="../css/styles.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -79,17 +79,17 @@
 							<nav>
 								<ul>
 									<li class="active">
-										<a href="#"><i class="dashboard-ico"></i><span>DASHBOARD</span></a>
+										<a href="08_dashboard.html"><i class="dashboard-ico"></i><span>DASHBOARD</span></a>
 										<ul>
-											<li class="active"><a href="#">General</a></li>
-											<li><a href="#">Financials</a></li>
+											<li class="active"><a href="08_dashboard.html">General</a></li>
+											<li><a href="09_dashboard_financials.html">Financials</a></li>
 										</ul>
 									</li>
 									<li>
 										<a href="#"><i class="accounts-ico"></i><span>ACCOUNTS</span></a>
 									</li>
 									<li>
-										<a href="#"><i class="suppliers-ico"></i><span>SUPPLIERS</span></a>
+										<a href="10_suppliers.html"><i class="suppliers-ico"></i><span>SUPPLIERS</span></a>
 									</li>
 									<li>
 										<a href="#"><i class="sales-marketing-ico"></i><span>SALES & MARKETING</span></a>
@@ -107,13 +107,13 @@
 										<a href="#"><i class="settings-ico"></i><span>SETTINGS</span></a>
 									</li>
 									<li>
-										<a href="#"><i class="my-profile-ico"></i><span>MY PROFILE</span></a>
+										<a href="03_login.html"><i class="my-profile-ico"></i><span>MY PROFILE</span></a>
 									</li>
 								</ul>
 							</nav>
 						</div>
 					</div>	
-					<div class="main-inward__content">
+					<div class="main-inward__content pd-30-50">
 						<div class="main-inward__content-section">
 							<div class="fiters-block">
 								<div class="input-wrap select-inward">
@@ -200,7 +200,7 @@
 									<div class="projects-chart__chart-cover">
 										<div class="projects-chart__chart">
 											<div class="projects-status-chart-wrap">
-												<div id="projects-status-chart"></div>
+												<div class="size-round-chart" id="projects-status-chart"></div>
 												<div class="center">
 													<i class="chart-ico"></i>
 													<span>2,562</span>
@@ -220,7 +220,7 @@
 									<h3>SERVICE TYPE</h3>
 									<div class="projects-chart__chart-cover">
 										<div class="projects-chart__chart">
-											<div id="service-type-chart"></div>
+											<div class="size-round-chart" id="service-type-chart"></div>
 										</div>
 										<div class="projects-chart__chart-info service-type-chart-info">
 											<ul>
@@ -512,7 +512,7 @@
 
 	</div>
 	<script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-	<script src="http://kendo.cdn.telerik.com/2020.1.114/js/kendo.all.min.js"></script>
+	<script src="../libs/kendo-ui/kendo.all.min.js"></script>
 	<script src="../js/plugins.js"></script>
 	<script src="../js/charts.js"></script>
 	<script src="../js/tables.js"></script>

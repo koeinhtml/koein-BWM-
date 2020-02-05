@@ -3,6 +3,7 @@ $(document).ready(function() {
 	selectInit();
 	mobMenu();
 	mobMenuInward();
+	searchInward();
 });
 
 function slidersInit() {
@@ -34,11 +35,8 @@ function slidersInit() {
 	    },
 	    breakpoints: {
 
-		    576: {
-		      slidesPerView: 1,
-		    },
 
-		    767: {
+		    576: {
 		      slidesPerView: 2,
 		    },
 
@@ -105,10 +103,17 @@ function mobMenu() {
 		
 	});
 }
+
 function mobMenuInward() {
 	$(".js-btn-menu-inward").on("click", function(e) {
 		e.preventDefault();
 		$(".js-side-menu").toggleClass("show");
 		
+	});
+}
+
+function searchInward() {
+	$(".js-search-inward").on("mouseover", function(e) {
+		$("input").focus();
 	});
 }
