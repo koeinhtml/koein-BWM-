@@ -4,6 +4,8 @@ $(document).ready(function() {
 	mobMenu();
 	mobMenuInward();
 	searchInward();
+	popupInit();
+
 });
 
 function slidersInit() {
@@ -84,7 +86,7 @@ function slidersInit() {
 
 function selectInit() {
 	$('.js-select-single').select2({
-		width: 'resolve',
+		width: 'style',
 	});
 }
 
@@ -117,3 +119,20 @@ function searchInward() {
 		$("input").focus();
 	});
 }
+
+function popupInit() {
+	$('.js-popup-modal').magnificPopup({
+		removalDelay: 500,
+		callbacks: {
+	    beforeOpen: function() {
+	      this.st.mainClass = this.st.el.attr('data-effect');
+	    }
+	  },
+	});
+	$(document).on('click', '.popup-modal-dismiss', function (e) {
+		e.preventDefault();
+		$.magnificPopup.close();
+	});
+
+}
+

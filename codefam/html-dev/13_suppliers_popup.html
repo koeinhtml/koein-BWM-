@@ -1,73 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-  <title>10_suppliers</title>
-  <!-- Meta Data -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="koein" />
-  <meta name="description" content="" />
-
-	<!-- IOS Meta Data --> 
-	<meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  <meta name="apple-mobile-web-app-title" content="">
-
-  <!-- Twitter data -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="">
-  <meta name="twitter:title" content=".">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image" content="">
-
-  <!-- Open Graph data -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:description" content="" />
-  <meta property="og:site_name" content="" />
-
-	<link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-  <link rel="stylesheet" href="../libs/swiper/css/swiper.min.css">
-  <link rel="stylesheet" href="../libs/select2/css/select2.min.css">
-  <link rel="stylesheet" href="../libs/c3-master/c3.min.css">
-  <link rel="stylesheet" href="../libs/kendo-ui/kendo.default-v2.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../libs/magnific-popup/magnific-popup.css">
-  <link rel="stylesheet" href="../libs/daterangepicker/daterangepicker.css">
-	<link rel="stylesheet" href="../css/styles.css">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
-	<link rel="shortcut icon" href="assets/images/favicons/favicon.png" type="image/png">
-
-	
- 
+	@@include('_include/_head-assets.html', {
+		"title": "13_suppliers_popup"
+	}) 
 
 	
 </head>
 <body>
 	<div class="wrapper wrapper-inward">
 		<!-- .header -->
-		<header class="header-inward">
-		<div class="header-inward__col header-inward__left-col">
-			<a class="btn-menu-inward js-btn-menu-inward" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
-			<p class="header-inward__page-title">Suppliers</p>
-		</div>
-		<div class="header-inward__col header-inward__right-col">
-			<div class="notifications">
-				<a href="#" class="notification"><i class="zmdi zmdi-comment"></i><span class="notification__num">8</span></a>
-				<a href="#" class="notification"><i class="zmdi zmdi-notifications"></i><span class="notification__num">8</span></a>
-			</div>
-		</div>
-	</header>
+		@@include('_include/_header-inward.html', {
+			"title": "Suppliers"
+		})
 		<!-- /.header -->
 		
 		<main class="main-inward">
@@ -125,7 +70,7 @@
 												<a href="11_add_a_supplier.html">ADD</a>
 											</li>
 											<li>
-												<a href="#">VIEW</a>
+												<a href="12_supplier.html">VIEW</a>
 											</li>
 										</ul>
 									</div>
@@ -834,16 +779,102 @@
 				</div>
 			</div>
 		</main>
-
-
+		
 
 	</div>
-	<script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-	<script src="../libs/kendo-ui/kendo.all.min.js"></script>
-	<script src="../js/plugins.js"></script>
-	<script src="../js/charts.js"></script>
-	<script src="../js/tables.js"></script>
-	<script src="../js/main.js"></script> 
+
+	<div id="project-supplier-popup" class="popup mfp-hide mfp-with-anim">
+		<div class="popup-content">
+			<div class="popup-head">
+				<div class="popup-head__cover">
+					<h3>Supplier 1</h3>
+					<div class="popup-head__right-content">
+						<div class="input-wrap input-wrap-calendar">
+							<select class="js-select-single">
+								<option>February</option>
+								<option selected="">March </option>
+							  <option>April</option>
+							  <option>May</option>
+							</select>
+							<i class="zmdi zmdi-calendar"></i>
+						</div>
+						<div class="input-wrap input-wrap-calendar">
+							<select class="js-select-single">
+								<option>Wednesday  29</option>
+								<option selected="">Wednesday  30</option>
+							  <option>Wednesday  27</option>
+							  <option>Wednesday  26</option>
+							</select>
+							<i class="zmdi zmdi-calendar"></i>
+						</div>
+						<a href="#" class="close-link"><i class="zmdi zmdi-close-circle"></i></a>
+					</div>
+				</div>
+			</div>
+			<table class="js-table-inward">
+				<thead>
+					<tr>
+						<th>Project/Task Name</th>
+						<th>Project Manager</th>
+						<th>Task Type</th>
+						<th>Purchase Order</th>
+						<th>Money Issued</th>
+						<th>Paid Amount</th>
+						<th>Pending Amount</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="k-master-row">
+						<td><a class="k-icon k-i-collapse" href="#" aria-label="Collapse" tabindex="-1"></a> Project 1</td>
+						<td>Joyce Attoue</td>
+						<td><i class="num-round num-round--cyan">2</i></td>
+						<td><i class="num-round num-round--cyan">3</i></td>
+						<td>200 000 $</td>
+						<td>100 000 $</td>
+						<td>100 000 $</td>
+						<td><span class="status-done">Done</span></td>
+					</tr>
+					<tr class="k-detail-row">
+						<td>Task 1</td>
+						<td>Joyce Attoue</td>
+						<td><i class="num-round num-round--cyan">2</i></td>
+						<td><i class="num-round num-round--cyan">3</i></td>
+						<td>200 000 $</td>
+						<td>100 000 $</td>
+						<td>100 000 $</td>
+						<td><span class="status-done">Done</span></td>
+					</tr>
+					<tr class="k-detail-row">
+						<td>Task 2</td>
+						<td>Joyce Attoue</td>
+						<td><i class="num-round num-round--cyan">2</i></td>
+						<td><i class="num-round num-round--cyan">3</i></td>
+						<td>200 000 $</td>
+						<td>100 000 $</td>
+						<td>100 000 $</td>
+						<td><span class="status-done">Done</span></td>
+					</tr>
+
+							
+				</tbody>
+			</table>
+
+
+
+		</div>
+	</div>
+	@@include('_include/_footer-assets.html') 
+
+	<script>
+		$.magnificPopup.open({
+		  items: {
+		    src: "#project-supplier-popup",
+				removalDelay: 500,
+				mainClass: 'mfp-zoom-in',
+		  }
+		});
+	</script>
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-  <title>10_suppliers</title>
+  <title>13_suppliers_popup</title>
   <!-- Meta Data -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -125,7 +125,7 @@
 												<a href="11_add_a_supplier.html">ADD</a>
 											</li>
 											<li>
-												<a href="#">VIEW</a>
+												<a href="12_supplier.html">VIEW</a>
 											</li>
 										</ul>
 									</div>
@@ -834,9 +834,90 @@
 				</div>
 			</div>
 		</main>
+		
+
+	</div>
+
+	<div id="project-supplier-popup" class="popup mfp-hide mfp-with-anim">
+		<div class="popup-content">
+			<div class="popup-head">
+				<div class="popup-head__cover">
+					<h3>Supplier 1</h3>
+					<div class="popup-head__right-content">
+						<div class="input-wrap input-wrap-calendar">
+							<select class="js-select-single">
+								<option>February</option>
+								<option selected="">March </option>
+							  <option>April</option>
+							  <option>May</option>
+							</select>
+							<i class="zmdi zmdi-calendar"></i>
+						</div>
+						<div class="input-wrap input-wrap-calendar">
+							<select class="js-select-single">
+								<option>Wednesday  29</option>
+								<option selected="">Wednesday  30</option>
+							  <option>Wednesday  27</option>
+							  <option>Wednesday  26</option>
+							</select>
+							<i class="zmdi zmdi-calendar"></i>
+						</div>
+						<a href="#" class="close-link"><i class="zmdi zmdi-close-circle"></i></a>
+					</div>
+				</div>
+			</div>
+			<table class="js-table-inward">
+				<thead>
+					<tr>
+						<th>Project/Task Name</th>
+						<th>Project Manager</th>
+						<th>Task Type</th>
+						<th>Purchase Order</th>
+						<th>Money Issued</th>
+						<th>Paid Amount</th>
+						<th>Pending Amount</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="k-master-row">
+						<td><a class="k-icon k-i-collapse" href="#" aria-label="Collapse" tabindex="-1"></a> Project 1</td>
+						<td>Joyce Attoue</td>
+						<td><i class="num-round num-round--cyan">2</i></td>
+						<td><i class="num-round num-round--cyan">3</i></td>
+						<td>200 000 $</td>
+						<td>100 000 $</td>
+						<td>100 000 $</td>
+						<td><span class="status-done">Done</span></td>
+					</tr>
+					<tr class="k-detail-row">
+						<td>Task 1</td>
+						<td>Joyce Attoue</td>
+						<td><i class="num-round num-round--cyan">2</i></td>
+						<td><i class="num-round num-round--cyan">3</i></td>
+						<td>200 000 $</td>
+						<td>100 000 $</td>
+						<td>100 000 $</td>
+						<td><span class="status-done">Done</span></td>
+					</tr>
+					<tr class="k-detail-row">
+						<td>Task 2</td>
+						<td>Joyce Attoue</td>
+						<td><i class="num-round num-round--cyan">2</i></td>
+						<td><i class="num-round num-round--cyan">3</i></td>
+						<td>200 000 $</td>
+						<td>100 000 $</td>
+						<td>100 000 $</td>
+						<td><span class="status-done">Done</span></td>
+					</tr>
+
+							
+				</tbody>
+			</table>
 
 
 
+		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
 	<script src="../libs/kendo-ui/kendo.all.min.js"></script>
@@ -844,6 +925,16 @@
 	<script src="../js/charts.js"></script>
 	<script src="../js/tables.js"></script>
 	<script src="../js/main.js"></script> 
+
+	<script>
+		$.magnificPopup.open({
+		  items: {
+		    src: "#project-supplier-popup",
+				removalDelay: 500,
+				mainClass: 'mfp-zoom-in',
+		  }
+		});
+	</script>
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-  <title>10_suppliers</title>
+  <title>12_supplier</title>
   <!-- Meta Data -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -125,7 +125,7 @@
 												<a href="11_add_a_supplier.html">ADD</a>
 											</li>
 											<li>
-												<a href="#">VIEW</a>
+												<a  class="js-popup-modal" href="#supplier-view-popup" data-effect="mfp-zoom-in">VIEW</a>
 											</li>
 										</ul>
 									</div>
@@ -835,8 +835,119 @@
 			</div>
 		</main>
 
+	</div>
 
+	<div id="supplier-view-popup" class="popup mfp-hide mfp-with-anim">
+		<div class="popup-content">
+			<div class="popup-head">
+				<div class="popup-head__cover">
+					<h3>Supplier 1</h3>
+					<a href="13_suppliers_popup.html" class="btn btn-with-num"><i>2</i> Projects</a>
+				</div>
+			</div>
+			<form class="supplier-form">
+				<div class="popup-section pb-25">
+					<div class="input-wrap-row input-wrap-col-w50">
+						<div class="input-wrap-col">
+							<div class="input-wrap input-wrap-flex">
+								<label>First Name</label>
+								<input type="text" value="Joyce">
+							</div>
+						</div>
+						<div class="input-wrap-col">
+							<div class="input-wrap input-wrap-flex">
+								<label>Last Name</label>
+								<input type="text" value="Attoue">
+							</div>
+						</div>
+						<div class="input-wrap-col">
+							<div class="input-wrap input-wrap-flex">
+								<label>Account Name</label>
+								<input type="text" value="Koein">
+							</div>
+						</div>
+						<div class="input-wrap-col">
+							<div class="input-wrap select-supplier input-wrap-flex">
+								<label>Type</label>
+								<select class="js-select-single">
+									<option>Consulting</option>
+								  <option>Type 2</option>
+								  <option>Type 3</option>
+								</select>
 
+							</div>
+						</div>
+						<div class="input-wrap-col">
+							<div class="input-wrap input-double-wrap  select-supplier input-wrap-flex">
+								<label>Headquarter Location</label>
+								<select class="js-select-single">
+									<option>Lebanon</option>
+								  <option>Location 2</option>
+								  <option>Location 3</option>
+								</select>
+								<select class="js-select-single">
+									<option>Beirut</option>
+								  <option>Location 2</option>
+								  <option>Location 3</option>
+								</select>
+							</div>
+						</div>
+						<div class="input-wrap-col">
+							<div class="input-wrap select-supplier input-wrap-flex">
+								<label>Branch offices</label>
+								<select class="js-select-single">
+									<option>Beirut</option>
+								  <option>Offices 2</option>
+								  <option>Offices 3</option>
+								</select>
+							</div>
+						</div>
+						<div class="input-wrap-col">
+							<div class="input-wrap input-wrap-flex">
+								<label>Email</label>
+								<input type="email" value="Joycea@hotmail.com">
+							</div>
+						</div>
+						<div class="input-wrap-col">
+							<div class="input-wrap input-double-wrap select-supplier input-wrap-flex">
+								<label>Phone Number <i class="zmdi zmdi-plus-circle-o"></i></label>
+								<input type="num" value="(961) 71 33 65 21">
+								<select class="js-select-single">
+									<option>Mobile</option>
+								  <option>Mobile 2</option>
+								  <option>Mobile 3</option>
+								</select>
+							</div>
+						</div>
+						<div class="input-wrap-col">
+							<div class="input-wrap input-wrap-flex">
+								<label>Website</label>
+								<input type="text" value="--">
+							</div>
+						</div>
+						<div class="input-wrap-col">
+							<div class="input-wrap input-wrap-flex">
+								<label>Contact person</label>
+								<input type="text" value="Marie wannous">
+							</div>
+						</div>
+						<div class="input-wrap-col">
+							<div class="input-wrap input-wrap-flex">
+								<label>Username</label>
+								<input type="text" value="Joyce">
+							</div>
+						</div>
+						<div class="input-wrap-col">
+							<div class="input-wrap input-wrap-flex">
+								<label>Password</label>
+								<input type="text" value="A">
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="btn popup-modal-dismiss" type="submit">SAVE</button>
+			</form>
+		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
 	<script src="../libs/kendo-ui/kendo.all.min.js"></script>
@@ -844,6 +955,16 @@
 	<script src="../js/charts.js"></script>
 	<script src="../js/tables.js"></script>
 	<script src="../js/main.js"></script> 
+
+	<script>
+		$.magnificPopup.open({
+		  items: {
+		    src: "#supplier-view-popup",
+				removalDelay: 500,
+				mainClass: 'mfp-zoom-in',
+		  }
+		});
+	</script>
 
 </body>
 </html>

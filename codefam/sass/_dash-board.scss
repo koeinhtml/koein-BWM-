@@ -330,24 +330,30 @@
 
 
 .table-inward {
-	padding: rem(30);
+	margin-bottom: rem(30);
 
-	&.pd-0 {
-		padding: 0;
+	@media (max-width: 991px) {
+		// margin-bottom: rem(15);
+	}
+
+	&:last-child {
+		margin-bottom: 0;
 	}
 
 	table {
 		min-width: rem(960);
 	}
 
-	@media (max-width: 575px) {
-		padding: rem(30) rem(15);	
-	}
+	
 
   &__head {
     padding-bottom: rem(30);
     border-bottom: rem(1) solid #eeeeee;
     margin-bottom: rem(20);
+
+    @media (max-width: 991px) {
+    	padding-bottom: rem(15);
+    }
 
     h3 {
       display: flex;
@@ -358,8 +364,6 @@
     .head-ico {
     	margin-right: rem(15);
     }
-
-    
   }
 
   &__main {
