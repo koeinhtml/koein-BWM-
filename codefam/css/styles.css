@@ -3251,6 +3251,11 @@ col.k-sorted, th.k-sorted {
   font-size: 22px;
 }
 
+.hierarchy-table td:first-child,
+.hierarchy-table th.k-header:first-child {
+  padding-left: 10px;
+}
+
 /* 
 
 ====== Zoom effect ======
