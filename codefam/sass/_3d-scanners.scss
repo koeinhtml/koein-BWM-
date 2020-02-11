@@ -17,17 +17,24 @@
 		background-color: #fff;
 		margin-bottom: 20px;
 		padding: 15px;
-		padding-bottom: 0;
 
 		.task-table {
 			margin-top: 75px;
 		}
 	}
 
+
+
 	&__cover-head {
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
 		padding: 15px 0;
+
+		@media (max-width: 767.98px) {
+			flex-flow: column;
+			align-items: flex-start;
+		}
 
 		h2 {
 			font-size: 28px;
@@ -60,15 +67,28 @@
 		}
 	}
 
-	.btn-plus {
-		margin-left: auto;
+	&__cover-head-col {
+		display: flex;
+		align-items: center;
+
+		&:last-child {
+			justify-content: flex-end;
+
+			@media (max-width: 767.98px) {
+				align-items: flex-end;
+				justify-content: center;
+			}
+		}
+
+		@media (max-width: 767.98px) {
+			padding-bottom: 15px;
+			width: 100%;
+			flex-flow: column;
+			align-items: flex-start;
+		}
 	}
 }
 
-
-.three-d-scan-schedule {
-	padding-left: 25px;
-}
 
 .btn-plus {
 	display: flex;
@@ -86,7 +106,7 @@
 }
 
 .hr-bars-schedule {
-
+	overflow: hidden;
 	ul {
 		height: 70px;
 		display: flex;
@@ -103,6 +123,7 @@
 
 			&:last-child {
 				flex-grow: 0;
+				margin-right: 15px;
 
 				&:after {
 					display: none;
@@ -198,8 +219,8 @@
 			font-size: 15px;
 		}
 
-		&--gray {
-			background-color: #d7e4c6;
+		&--light {
+			background-color: #d6e5c6;
 			i {
 				color: #7eb643;
 			}
@@ -209,7 +230,7 @@
 
 
 .task-table {
-	.k-header {
+	th {
 		text-transform: uppercase;
 		color: #333333;
 		font-size: 13px;
@@ -230,6 +251,12 @@
 		&.active {
 			td {
 				background: #f7f7f7 !important;
+
+				.zmdi-caret-right {
+					&:before {
+						content: '\f2f2';
+					}
+				}
 			}
 		}
 	}
@@ -237,21 +264,45 @@
 	.table-task-link {
 		display: flex;
 		align-items: center;
+		text-transform: uppercase;
+		
+
 		i {
-			color-profile: #666666;
+			color: #666666;
 			margin-right: 5px;
 
 			&:first-child {
-				font-size: 18px;
+				font-size: 20px;
 			}
+
 			&:nth-child(2) {
 				font-size: 20px;
+				padding-top: 2px;
 			}
 		}
 		span {
-			text-transform: uppercase;
 			color: #4aa4ea;
 			padding-left: 5px;
+			text-decoration: underline;
+		}
+	}
+	.zmdi-calendar-alt {
+		font-size: 20px;
+	}
+
+	.table-scanner-link {
+		padding-left: 60px;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+
+		i {
+			font-size: 25px;
+			margin-right: 15px;
+		}
+
+		span {
+			text-transform: uppercase;
 			text-decoration: underline;
 		}
 	}
@@ -271,3 +322,29 @@
 	}
 }
 
+.task-table-wrap {
+	overflow-x: auto;
+	overflow-y: hidden;
+
+	.k-grid {
+		min-width: 900px;
+	}
+}
+
+.three-d-scan-schedule-wrap {
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding-left: 25px;
+
+	.hr-bars-schedule {
+		min-width: 900px;
+	}
+}
+
+.hide-side-menu {
+	width: 0rem;
+
+	&.show {
+		width: 13.125rem;
+	}
+}

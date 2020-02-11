@@ -141,8 +141,8 @@ function showSubRow() {
 	$('.js-open-sub-row').on('click', function(e) {
 		e.preventDefault();
 		$(this).closest('tr').toggleClass("active");
-		let table =  $(this).closest('table');
-		let  indexTableRow = $(this).closest('tr').attr('data-tr');
+		var table =  $(this).closest('table');
+		var  indexTableRow = $(this).closest('tr').attr('data-tr');
 
 		table.find('tr').each(function (){
 			if ($(this).hasClass(indexTableRow)) {

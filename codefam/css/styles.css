@@ -3800,7 +3800,6 @@ col.k-sorted, th.k-sorted {
   background-color: #fff;
   margin-bottom: 20px;
   padding: 15px;
-  padding-bottom: 0;
 }
 
 .three-d-scan__cover .task-table {
@@ -3810,9 +3809,20 @@ col.k-sorted, th.k-sorted {
 .three-d-scan__cover-head {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
   padding: 15px 0;
+}
+
+@media (max-width: 767.98px) {
+  .three-d-scan__cover-head {
+    -ms-flex-flow: column;
+        flex-flow: column;
+    -ms-flex-align: start;
+        align-items: flex-start;
+  }
 }
 
 .three-d-scan__cover-head h2 {
@@ -3845,12 +3855,36 @@ col.k-sorted, th.k-sorted {
   padding-left: 5px;
 }
 
-.three-d-scan .btn-plus {
-  margin-left: auto;
+.three-d-scan__cover-head-col {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
-.three-d-scan-schedule {
-  padding-left: 25px;
+.three-d-scan__cover-head-col:last-child {
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+@media (max-width: 767.98px) {
+  .three-d-scan__cover-head-col:last-child {
+    -ms-flex-align: end;
+        align-items: flex-end;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .three-d-scan__cover-head-col {
+    padding-bottom: 15px;
+    width: 100%;
+    -ms-flex-flow: column;
+        flex-flow: column;
+    -ms-flex-align: start;
+        align-items: flex-start;
+  }
 }
 
 .btn-plus {
@@ -3869,6 +3903,10 @@ col.k-sorted, th.k-sorted {
 .btn-plus i {
   color: #fff;
   font-size: 25px;
+}
+
+.hr-bars-schedule {
+  overflow: hidden;
 }
 
 .hr-bars-schedule ul {
@@ -3893,6 +3931,7 @@ col.k-sorted, th.k-sorted {
 .hr-bars-schedule ul li:last-child {
   -ms-flex-positive: 0;
       flex-grow: 0;
+  margin-right: 15px;
 }
 
 .hr-bars-schedule ul li:last-child:after {
@@ -3990,15 +4029,15 @@ col.k-sorted, th.k-sorted {
   font-size: 15px;
 }
 
-.hr-bars-schedule__bar-item--gray {
-  background-color: #d7e4c6;
+.hr-bars-schedule__bar-item--light {
+  background-color: #d6e5c6;
 }
 
-.hr-bars-schedule__bar-item--gray i {
+.hr-bars-schedule__bar-item--light i {
   color: #7eb643;
 }
 
-.task-table .k-header {
+.task-table th {
   text-transform: uppercase;
   color: #333333;
   font-size: 13px;
@@ -4019,30 +4058,58 @@ col.k-sorted, th.k-sorted {
   background: #f7f7f7 !important;
 }
 
+.task-table tr.active td .zmdi-caret-right:before {
+  content: '\f2f2';
+}
+
 .task-table .table-task-link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  text-transform: uppercase;
+}
+
+.task-table .table-task-link i {
+  color: #666666;
+  margin-right: 5px;
+}
+
+.task-table .table-task-link i:first-child {
+  font-size: 20px;
+}
+
+.task-table .table-task-link i:nth-child(2) {
+  font-size: 20px;
+  padding-top: 2px;
+}
+
+.task-table .table-task-link span {
+  color: #4aa4ea;
+  padding-left: 5px;
+  text-decoration: underline;
+}
+
+.task-table .zmdi-calendar-alt {
+  font-size: 20px;
+}
+
+.task-table .table-scanner-link {
+  padding-left: 60px;
+  text-transform: uppercase;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
 }
 
-.task-table .table-task-link i {
-  color-profile: #666666;
-  margin-right: 5px;
+.task-table .table-scanner-link i {
+  font-size: 25px;
+  margin-right: 15px;
 }
 
-.task-table .table-task-link i:first-child {
-  font-size: 18px;
-}
-
-.task-table .table-task-link i:nth-child(2) {
-  font-size: 20px;
-}
-
-.task-table .table-task-link span {
+.task-table .table-scanner-link span {
   text-transform: uppercase;
-  color: #4aa4ea;
-  padding-left: 5px;
   text-decoration: underline;
 }
 
@@ -4056,6 +4123,33 @@ col.k-sorted, th.k-sorted {
 
 .sub-tr.show {
   display: table-row;
+}
+
+.task-table-wrap {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.task-table-wrap .k-grid {
+  min-width: 900px;
+}
+
+.three-d-scan-schedule-wrap {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-left: 25px;
+}
+
+.three-d-scan-schedule-wrap .hr-bars-schedule {
+  min-width: 900px;
+}
+
+.hide-side-menu {
+  width: 0rem;
+}
+
+.hide-side-menu.show {
+  width: 13.125rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

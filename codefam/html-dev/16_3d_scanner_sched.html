@@ -18,7 +18,7 @@
 		<main class="main-inward">
 			<div class="main-inward__wrap">
 				<div class="main-inward__cover">
-					<div class="main-inward__side js-side-menu">
+					<div class="main-inward__side js-side-menu hide-side-menu">
 						<div class="side-menu-inward">
 							<a href="01_home.html" class="main-inward__side-logo">
 								<img src="../assets/logo.png" alt="">
@@ -94,11 +94,15 @@
 						</div>
 						<div class="three-d-scan__cover">
 							<div class="three-d-scan__cover-head">
-								<h2><a href="14_settings.html"><i class="fa fa-angle-left" aria-hidden="true"></i> 3D SCANNERS</a></h2>
-								<p><b>2019 </b><span> Ashrafieh, Gemayze, Dora</span></p>
-								<a href="#" class="btn-plus"><i class="zmdi zmdi-plus-circle-o"></i></a>
+								<div class="three-d-scan__cover-head-col">
+									<h2><a href="14_settings.html"><i class="fa fa-angle-left" aria-hidden="true"></i> 3D SCANNERS</a></h2>
+									<p><b>2019 </b><span> Ashrafieh, Gemayze, Dora</span></p>
+								</div>
+								<div class="three-d-scan__cover-head-col">
+									<a href="#" class="btn-plus"><i class="zmdi zmdi-plus-circle-o"></i></a>
+								</div>
 							</div>
-							<div class="three-d-scan-schedule">
+							<div class="three-d-scan-schedule-wrap">
 								<div class="hr-bars-schedule">
 									<ul>
 										<li><span>Jan</span></li>
@@ -114,6 +118,7 @@
 									<div class="hr-bars-schedule__main">
 										<div class="hr-bars-schedule__row">
 											<span>3D SCANNER 1</span>
+											<div class="hr-bars-schedule__bar-item hr-bars-schedule__bar-item--light" style="width: 1.53%; left: 46.38%"></div>
 											<div class="hr-bars-schedule__bar-item" style="width: 1.5%; left: 52.76%"></div>
 											<div class="hr-bars-schedule__bar-item" style="width: 3.5%; left: calc(1.5% + 52.76% + 1px)"><i class="zmdi zmdi-check"></i></div>
 										</div>
@@ -153,209 +158,404 @@
 										</div>
 									</div>
 								</div>
+						
 							</div>
 						</div>
 						<div class="three-d-scan__cover">
-							<table class="task-table js-task-table">
-								<colgroup>
-                  <col style="width:30px" />
-                </colgroup>
-								<thead>
-									<tr>
-										<th></th>
-										<th>Task Mode</th>
-										<th>Task ID</th>
-										<th>Task name</th>
-										<th>3D Scanner Name</th>
-										<th>Project Name</th>
-										<th>Start Date</th>
-										<th>End Date</th>
-										<th>Duration</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr data-tr="tr-1">
-										<td><input class="k-checkbox" type="checkbox"></td>
-										<td></td>
-										<td>1</td>
-										<td><a href="#" class="js-open-sub-row table-task-link"><i class="zmdi zmdi-folder"></i> <i class="zmdi zmdi-caret-down"></i> <span>Task 1</span></a></td>
-										<td>Name</td>
-										<td>Project Name</td>
-										<td>10 jan 2014</td>
-										<td>10 jan 2014</td>
-										<td>
-											<div class="table-menu-cover">
-												1
-												<div class="table-menu">
-													<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
-													<ul>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-													</ul>
-												</div>
-
-											</div>
-										</td>
-									</tr>
-									<tr class="tr-1 sub-tr">
-										<td><input class="k-checkbox" type="checkbox"></td>
-										<td><i class="zmdi zmdi-calendar-alt"></i></td>
-										<td>1.1</td>
-										<td><a href="#"><i class="zmdi zmdi-caret-right"></i> 3D SCANNER</a></td>
-										<td>Name</td>
-										<td>Project Name</td>
-										<td>10 jan 2014</td>
-										<td>10 jan 2014</td>
-										<td>
-											<div class="table-menu-cover">
-												1
-												<div class="table-menu">
-													<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
-													<ul>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-													</ul>
-												</div>
-
-											</div>
-										</td>
-									</tr>
-									<tr class="tr-1 sub-tr">
-										<td><input class="k-checkbox" type="checkbox"></td>
-										<td><i class="zmdi zmdi-calendar-alt"></i></td>
-										<td>1.2</td>
-										<td><a href="#"><i class="zmdi zmdi-caret-right"></i> 3D SCANNER</a></td>
-										<td>Name</td>
-										<td>Project Name</td>
-										<td>10 jan 2014</td>
-										<td>10 jan 2014</td>
-										<td>
-											<div class="table-menu-cover">
-												1
-												<div class="table-menu">
-													<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
-													<ul>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-													</ul>
-												</div>
-
-											</div>
-										</td>
-									</tr>
-									<tr data-tr="tr-2">
-										<td><input class="k-checkbox" type="checkbox"></td>
-										<td></td>
-										<td>2</td>
-										<td><a href="#" class="js-open-sub-row"><i class="zmdi zmdi-folder"></i> <i class="zmdi zmdi-caret-down"></i> <span>Task 2</span></a></td>
-										<td>Name</td>
-										<td>Project Name</td>
-										<td>10 jan 2014</td>
-										<td>10 jan 2014</td>
-										<td>
-											<div class="table-menu-cover">
-												1
-												<div class="table-menu">
-													<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
-													<ul>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-													</ul>
-												</div>
-
-											</div>
-										</td>
-									</tr>
-									<tr class="tr-2 sub-tr">
-										<td><input class="k-checkbox" type="checkbox"></td>
-										<td></td>
-										<td>2.1</td>
-										<td>3D SCANNER</td>
-										<td>Name</td>
-										<td>Project Name</td>
-										<td>10 jan 2014</td>
-										<td>10 jan 2014</td>
-										<td>
-											<div class="table-menu-cover">
-												1
-												<div class="table-menu">
-													<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
-													<ul>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-													</ul>
-												</div>
-
-											</div>
-										</td>
-									</tr>
-									<tr class="tr-2 sub-tr">
-										<td><input class="k-checkbox" type="checkbox"></td>
-										<td></td>
-										<td>2.2</td>
-										<td>3D SCANNER</td>
-										<td>Name</td>
-										<td>Project Name</td>
-										<td>10 jan 2014</td>
-										<td>10 jan 2014</td>
-										<td>
-											<div class="table-menu-cover">
-												1
-												<div class="table-menu">
-													<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
-													<ul>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-														<li>
-															<a href="#">Lorem ipsum.</a>
-														</li>
-													</ul>
-												</div>
-
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
+							<div class="task-table-wrap">
+								<div class="k-grid k-widget k-grid-display-block">
+									<table class="task-table js-task-table" >
+										<colgroup>
+											<col style="width:30px">
+											<col>
+											<col>
+											<col>
+											<col>
+											<col>
+											<col>
+											<col>
+											<col>
+										</colgroup>
+									
+										<thead class="k-grid-header">
+											<tr role="row">
+											<th class="k-header"></th>
+											<th class="k-header">Task Mode</th>
+											<th class="k-header">Task ID</th>
+											<th class="k-header">Task name</th>
+											<th class="k-header" data-field="ScannerName">3D Scanner Name</th>
+											<th class="k-header">Project Name</th>
+											<th class="k-header">Start Date</th>
+											<th class="k-header">End Date</th>
+											<th class="k-header">Duration</th>
+										</tr>
+										
+										</thead>
+										<tbody>
+											<tr data-tr="tr-1">
+												<td><input class="k-checkbox" type="checkbox"></td>
+												<td></td>
+												<td>1</td>
+												<td><a href="#" class="js-open-sub-row table-task-link"><i class="zmdi zmdi-folder"></i> <i class="zmdi zmdi-caret-right"></i> <span>Task 1</span></a></td>
+												<td>Name</td>
+												<td>Project Name</td>
+												<td>10 jan 2014</td>
+												<td>10 jan 2014</td>
+												<td>
+													<div class="table-menu-cover">
+														1
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+								
+													</div>
+												</td>
+											</tr>
+											<tr class="tr-1 sub-tr">
+												<td><input class="k-checkbox" type="checkbox"></td>
+												<td><i class="zmdi zmdi-calendar-alt"></i></td>
+												<td>1.1</td>
+												<td><a href="#" class="table-scanner-link"><i class="zmdi zmdi-caret-right"></i> <span>3D SCANNER</span></a></td>
+												<td>Name</td>
+												<td>Project Name</td>
+												<td>10 jan 2014</td>
+												<td>10 jan 2014</td>
+												<td>
+													<div class="table-menu-cover">
+														1
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+								
+													</div>
+												</td>
+											</tr>
+											<tr class="tr-1 sub-tr">
+												<td><input class="k-checkbox" type="checkbox"></td>
+												<td><i class="zmdi zmdi-calendar-alt"></i></td>
+												<td>1.2</td>
+												<td><a href="#" class="table-scanner-link"><i class="zmdi zmdi-caret-right"></i> <span>3D SCANNER</span></a></td>
+												<td>Name</td>
+												<td>Project Name</td>
+												<td>10 jan 2014</td>
+												<td>10 jan 2014</td>
+												<td>
+													<div class="table-menu-cover">
+														1
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+								
+													</div>
+												</td>
+											</tr>
+											<tr data-tr="tr-2">
+												<td><input class="k-checkbox" type="checkbox"></td>
+												<td></td>
+												<td>2</td>
+												<td><a href="#" class="js-open-sub-row table-task-link"><i class="zmdi zmdi-folder"></i> <i class="zmdi zmdi-caret-right"></i> <span>Task 2</span></a></td>
+												<td>Name</td>
+												<td>Project Name</td>
+												<td>10 jan 2014</td>
+												<td>10 jan 2014</td>
+												<td>
+													<div class="table-menu-cover">
+														1
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+								
+													</div>
+												</td>
+											</tr>
+											<tr class="tr-2 sub-tr">
+												<td><input class="k-checkbox" type="checkbox"></td>
+												<td></td>
+												<td>2.1</td>
+												<td><a href="#" class="table-scanner-link"><i class="zmdi zmdi-caret-right"></i> <span>3D SCANNER</span></a></td>
+												<td>Name</td>
+												<td>Project Name</td>
+												<td>10 jan 2014</td>
+												<td>10 jan 2014</td>
+												<td>
+													<div class="table-menu-cover">
+														1
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+								
+													</div>
+												</td>
+											</tr>
+											<tr class="tr-2 sub-tr">
+												<td><input class="k-checkbox" type="checkbox"></td>
+												<td></td>
+												<td>2.2</td>
+												<td><a href="#" class="table-scanner-link"><i class="zmdi zmdi-caret-right"></i> <span>3D SCANNER</span></a></td>
+												<td>Name</td>
+												<td>Project Name</td>
+												<td>10 jan 2014</td>
+												<td>10 jan 2014</td>
+												<td>
+													<div class="table-menu-cover">
+														1
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+								
+													</div>
+												</td>
+											</tr>
+											<tr data-tr="tr-3">
+												<td><input class="k-checkbox" type="checkbox"></td>
+												<td></td>
+												<td>3</td>
+												<td><a href="#" class="js-open-sub-row table-task-link"><i class="zmdi zmdi-folder"></i> <i class="zmdi zmdi-caret-right"></i> <span>Task 3</span></a></td>
+												<td>Name</td>
+												<td>Project Name</td>
+												<td>10 jan 2014</td>
+												<td>10 jan 2014</td>
+												<td>
+													<div class="table-menu-cover">
+														1
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+								
+													</div>
+												</td>
+											</tr>
+											<tr class="tr-3 sub-tr">
+												<td><input class="k-checkbox" type="checkbox"></td>
+												<td></td>
+												<td>3.1</td>
+												<td><a href="#" class="table-scanner-link"><i class="zmdi zmdi-caret-right"></i> <span>3D SCANNER</span></a></td>
+												<td>Name</td>
+												<td>Project Name</td>
+												<td>10 jan 2014</td>
+												<td>10 jan 2014</td>
+												<td>
+													<div class="table-menu-cover">
+														1
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+								
+													</div>
+												</td>
+											</tr>
+											<tr class="tr-3 sub-tr">
+												<td><input class="k-checkbox" type="checkbox"></td>
+												<td></td>
+												<td>3.2</td>
+												<td><a href="#" class="table-scanner-link"><i class="zmdi zmdi-caret-right"></i> <span>3D SCANNER</span></a></td>
+												<td>Name</td>
+												<td>Project Name</td>
+												<td>10 jan 2014</td>
+												<td>10 jan 2014</td>
+												<td>
+													<div class="table-menu-cover">
+														1
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+								
+													</div>
+												</td>
+											</tr>
+											<tr data-tr="tr-4">
+												<td><input class="k-checkbox" type="checkbox"></td>
+												<td></td>
+												<td>4</td>
+												<td><a href="#" class="js-open-sub-row table-task-link"><i class="zmdi zmdi-folder"></i> <i class="zmdi zmdi-caret-right"></i> <span>Task 4</span></a></td>
+												<td>Name</td>
+												<td>Project Name</td>
+												<td>10 jan 2014</td>
+												<td>10 jan 2014</td>
+												<td>
+													<div class="table-menu-cover">
+														1
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+								
+													</div>
+												</td>
+											</tr>
+											<tr class="tr-4 sub-tr">
+												<td><input class="k-checkbox" type="checkbox"></td>
+												<td></td>
+												<td>4.1</td>
+												<td><a href="#" class="table-scanner-link"><i class="zmdi zmdi-caret-right"></i> <span>3D SCANNER</span></a></td>
+												<td>Name</td>
+												<td>Project Name</td>
+												<td>10 jan 2014</td>
+												<td>10 jan 2014</td>
+												<td>
+													<div class="table-menu-cover">
+														1
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+								
+													</div>
+												</td>
+											</tr>
+											<tr class="tr-4 sub-tr">
+												<td><input class="k-checkbox" type="checkbox"></td>
+												<td></td>
+												<td>4.2</td>
+												<td><a href="#" class="table-scanner-link"><i class="zmdi zmdi-caret-right"></i> <span>3D SCANNER</span></a></td>
+												<td>Name</td>
+												<td>Project Name</td>
+												<td>10 jan 2014</td>
+												<td>10 jan 2014</td>
+												<td>
+													<div class="table-menu-cover">
+														1
+														<div class="table-menu">
+															<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+															<ul>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+																<li>
+																	<a href="#">Lorem ipsum.</a>
+																</li>
+															</ul>
+														</div>
+								
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
 						</div>
 
 

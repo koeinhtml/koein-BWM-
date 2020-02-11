@@ -77,14 +77,6 @@ function tableInit() {
 		});
 	}
 
-	$(".js-task-table").kendoGrid({
-		sortable: false,
-		filterable: false,
-		scrollable: false,
-		columnMenu: false,
-		persistSelection: true,
-	});
-
 
 
 }
