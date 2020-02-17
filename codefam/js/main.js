@@ -5,7 +5,8 @@ $(document).ready(function() {
 	mobMenuInward();
 	searchInward();
 	popupInit();
-
+	tooltipInit();
+	rangeInputInit();
 });
 
 
@@ -141,5 +142,41 @@ function popupInit() {
 		e.preventDefault();
 		$.magnificPopup.close();
 	});
+
+}
+
+function tooltipInit() {
+	$('.js-tooltip').tooltipster({
+	  
+	  interactive: true,
+	});
+}
+
+function rangeInputInit() {
+	$( ".js-input-range").slider({
+	  animate: "fast",
+	  step: 1,
+	  value: 3,
+	  min: 0,
+	  max: 5,
+	});
+
+
+
+	$(".js-input-range").each(function() {
+		$(this).on( "slide", function( event, ui ) {
+			$(this).find('.ui-slider-handle').html(ui.value);
+		});
+		
+		$(this).find('.ui-slider-handle').on( 'mousemove', function( ) {
+			var pos = $(this).attr('style');
+			pos_percent = pos.search('%;');
+			pos_left = pos.search(' ');
+			pos = pos.substr(pos_left, pos_percent);
+			pos = pos.substring(0, pos.length - 1)
+			$(this).closest('.js-input-range').find('.left-bg').css("width", pos);
+		});
+
+	})
 
 }
