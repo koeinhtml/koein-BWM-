@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('../_include/_head-assets.html', {
+		"title": "01_register"
+	}) 
+	
+</head>
+<body>
+	<div class="wrapper login-wrapper">
+		<div class="container">
+			<div class="login-pass login-pass--reg-1">
+				<div class="login-pass__head">
+					<a class="login-pass__logo" href="01_home.html"><img src="../../assets/logo.png" alt=""></a>
+				</div>
+				<div class="login-pass__content-wrap">
+					<div class="login-pass__main">
+						<h2>Join Mouawad Consulting now – it´s free! </h2>
+
+						<form class="login-form">
+							<div class="row">
+								<div class="col col-6">
+									<div class="input-wrap">
+										<label>First Name</label>
+										<input type="text" required="">
+									</div>
+								</div>
+								<div class="col col-6">
+									<div class="input-wrap">
+										<label>Last  Name</label>
+										<input type="text" required="">
+									</div>
+								</div>
+								<div class="col col-6">
+									<div class="input-wrap">
+										<label>Email</label>
+										<input type="email" required="">
+									</div>
+								</div>
+								<div class="col col-6">
+									<div class="input-wrap">
+										<label>Password</label>
+										<input type="password" required="">
+									</div>
+								</div>
+							</div>
+							<div class="login-checkbox">
+								<input id="checkbox-1" type="checkbox">
+								<label for="checkbox-1">I am registering as a manufacturer</label>
+							</div>
+
+							<div class="login-checkbox-center">
+								<div class="login-checkbox">
+									<input id="checkbox-2" type="checkbox">
+									<label for="checkbox-2">I agree to the Mouawad Consulting <a href="#">User Aqreement,</a> <a href="#">Privacy Policy,</a> and <a href="#">Cookie Policy.</a></label>
+								</div>
+							</div>
+							<button class="btn btn-green" type="submit">REGISTER</button>
+						</form>
+					</div>
+					<p class="login-pass__desc">Already a member? <a href="03_login.html">Sign In</a></p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	@@include('../_include/_footer-assets.html') 
+</body>
+</html>

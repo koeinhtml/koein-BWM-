@@ -28,9 +28,8 @@ $browser-context: 16; // Default
 
 // --------------inward------------
 @import "_header-invard.scss";
+@import "_menu-invard.scss";
 @import "_main-inward.scss";
 @import "_dash-board.scss";
-@import "_suppliers.scss";
+@import "_profile.scss";
 @import "_popup.scss";
-@import "_settings.scss";
-@import "_3d-scanners.scss";

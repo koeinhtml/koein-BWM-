@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('../_include/_head-assets.html', {
+		"title": "08_dashboards_widgets"
+	}) 
+
+	
+</head>
+<body>
+	<div class="wrapper wrapper-inward">
+		<!-- .header -->
+		@@include('../_include/_header-inward.html', {
+			"title": "Dashboard"
+		})
+		<!-- /.header -->
+		
+		<main class="main-inward">
+			<div class="main-inward__wrap">
+				<div class="main-inward__cover bdt">
+					<div class="main-inward__side js-side-menu show">
+						@@include('../_include/_menu-invard.html')
+					</div>	
+					<div class="main-inward__content">
+						<div class="main-inward__content-section">
+							<div class="main-inward__content-container">
+								<div class="fiters-block">
+									<div class="input-wrap select-inward">
+										<select class="js-select-single">
+											<option>ALL REGIONS</option>
+										  <option>Option 1</option>
+										 
+										  <option>Option 2</option>
+										</select>
+									</div>
+									<div class="input-wrap select-inward">
+										<select class="js-select-single">
+											<option>THIS MONTH</option>
+										  <option>Option 1</option>
+										 
+										  <option>Option 2</option>
+										</select>
+									</div>
+									<div class="input-wrap select-inward">
+										<select class="js-select-single">
+											<option>PROJECT MANAGER</option>
+										  <option>Option 1</option>
+										 
+										  <option>Option 2</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-inward__content-section">
+							<div class="main-inward__content-container">
+								<div class="difference-info-block">
+									<div class="difference-info difference-info--up">
+										<div class="growth-change">
+											<i class="double-chevron"></i>
+											<span>+20%</span>
+										</div>
+										<div class="difference-info__counter">
+											<span>20</span>
+											<span>New Leads</span>
+										</div>
+										<div class="difference-info__footer">
+										</div>
+									</div>
+									<div class="difference-info difference-info--down">
+										<div class="growth-change">
+											<i class="double-chevron"></i>
+											<span>-20%</span>
+										</div>
+										<div class="difference-info__counter">
+											<span>150</span>
+											<span>Lost Opportunities</span>
+										</div>
+									</div>
+									<div class="difference-info difference-info--up">
+										<div class="growth-change">
+											<i class="double-chevron"></i>
+											<span>+50%</span>
+										</div>
+										<div class="difference-info__counter">
+											<span>200</span>
+											<span>Won Opportunities</span>
+										</div>
+										<div class="difference-info__footer">
+											<span>220 €</span>
+											<span>220 $ </span>
+											<span>220 NOK</span>
+										</div>
+									</div>
+									<div class="difference-info difference-info--down">
+										<div class="growth-change">
+											<i class="double-chevron"></i>
+											<span>-10%</span>
+										</div>
+										<div class="difference-info__counter">
+											<span>35</span>
+											<span>Completed Projects</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-inward__content-section">
+							<div class="main-inward__content-container">
+								<div class="projects-charts-wrap">
+									<div class="projects-chart">
+										<h3>PROJECTS STATUS</h3>
+										<div class="projects-chart__chart-cover">
+											<div class="projects-chart__chart">
+												<div class="projects-status-chart-wrap">
+													<div class="size-round-chart" id="projects-status-chart"></div>
+													<div class="center">
+														<i class="chart-ico"></i>
+														<span>2,562</span>
+													</div>
+												</div>
+											</div>
+											<div class="projects-chart__chart-info projects-status-chart-info">
+												<ul>
+													<li><span>Completed</span></li>
+													<li><span>In process</span></li>
+													<li><span>Pending</span></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="projects-chart">
+										<h3>SERVICE TYPE</h3>
+										<div class="projects-chart__chart-cover">
+											<div class="projects-chart__chart">
+												<div class="size-round-chart" id="service-type-chart"></div>
+											</div>
+											<div class="projects-chart__chart-info service-type-chart-info">
+												<ul>
+													<li><span>Type Approval</span></li>
+													<li><span>Retrofit</span></li>
+													<li><span>Commissioning</span></li>
+													<li><span>Consultancy</span></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-inward__content-section mb-50">
+							<div class="main-inward__content-container">
+								<div class="projects-charts-wrap">
+									<div class="projects-chart active-user-chart">
+										<h3>ACTIVE USERS</h3>
+										<div class="projects-chart__chart-cover">
+											<div class="active-user-chart__legend">
+												<span class="circle-mark">W.Wannous</span>
+												<span class="circle-mark">JAttoue</span>
+												<span class="circle-mark">C.Adourian</span>
+												<span class="circle-mark">Marie.W</span>
+										
+											</div>
+											<div id="active-user-chart"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-inward__content-section">
+							<div class="main-inward__content-container">
+								<h3>SALES WEIGHTED PER CUSTOMER</h3>
+								<div class="chart-cover">
+									<div id="sales-weighted-customer-chart"></div>
+								</div>
+							</div>
+						</div>
+						<div class="main-inward__content-section mb-50">
+							<div class="main-inward__content-container">
+								<div class="shadow-block">
+									<div class="table-inward">
+										<div class="table-inward__head">
+											<h3><i class="head-ico"><i class="zmdi zmdi-chevron-down"></i></i> OPEN PROJECTS</h3>
+										</div>
+										<div class="table-inward__main">
+											
+											<table class="js-table-inward">
+									
+												<thead>
+													<tr>
+														<th>Project Title</th>
+														<th>Client</th>
+														<th>Project Type</th>
+														<th>Est. Revenue</th>
+														<th>Total Hours Registered</th>
+														<th>Overdue Tasks</th>
+														<th>Project Manager</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Name</td>
+														<td>Koein</td>
+														<td><span class="circle-mark circle-mark--cyan">Type Approval</span></td>
+														<td>200 $</td>
+														<td>2 H</td>
+														<td><i class="num-round num-round--cyan">2</i></td>
+														<td>Joyce Attoue</td>
+													</tr>
+													<tr>
+														<td>Name</td>
+														<td>Koein</td>
+														<td><span class="circle-mark circle-mark--green">Consultancy</span></td>
+														<td>200 $</td>
+														<td>4 H</td>
+														<td><i class="num-round num-round--cyan">2</i></td>
+														<td>Joyce Attoue</td>
+													</tr>
+													<tr>
+														<td>Name</td>
+														<td>Koein</td>
+														<td><span class="circle-mark circle-mark--gray">Retrofit</span></td>
+														<td>200 $</td>
+														<td>2 H</td>
+														<td><i class="num-round num-round--cyan">2</i></td>
+														<td>Joyce Attoue</td>
+													</tr>
+									
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="table-inward table-inward--light">
+										<div class="table-inward__head">
+											<h3><i class="head-ico"><i class="zmdi zmdi-chevron-down"></i></i>OPPORTUNITIES</h3>
+										</div>
+										<div class="table-inward__main">
+											
+											<table class="js-table-inward">
+									
+												<thead>
+													<tr>
+														<th>Project Title</th>
+														<th>Client</th>
+														<th>Project Type</th>
+														<th>Est. Revenue</th>
+														<th>Validity Date</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Name</td>
+														<td>Koein</td>
+														<td><span class="circle-mark circle-mark--cyan">Type Approval</span></td>
+														<td>200 $</td>
+														<td>12-11-2019</td>
+													</tr>
+													<tr>
+														<td>Name</td>
+														<td>Koein</td>
+														<td><span class="circle-mark circle-mark--green">Consultancy</span></td>
+														<td>200 $</td>
+														<td>12-11-2019</td>
+													</tr>
+													<tr>
+														<td>Name</td>
+														<td>Koein</td>
+														<td><span class="circle-mark circle-mark--gray">Retrofit</span></td>
+														<td>200 $</td>
+														<td>12-11-2019</td>
+													</tr>
+									
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+
+	</div>
+	@@include('../_include/_footer-assets.html') 
+	<script>
+		$('li[data-page=dashboard]').addClass('active');
+		$('li[data-page=dashboard] ul li:nth-child(1)').addClass('active');
+	</script>
+
+</body>
+</html>

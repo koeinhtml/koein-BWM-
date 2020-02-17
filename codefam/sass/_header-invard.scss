@@ -1,6 +1,6 @@
 .header-inward {
 	padding: 0 rem(15);
-	height: rem(50);
+	height: rem(55);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -23,9 +23,11 @@
 	font-size: rem(18);
 	color: #454545;
 }
+
 .notifications {
 	display: flex;
 	align-items: center;
+	padding-bottom: 10px;
 }
 
 .notification {
@@ -36,6 +38,7 @@
 	padding-top: rem(11);
 	padding-right: rem(11);
 	display: block;
+	
 
 	&__num {
 		padding: rem(4) rem(6);
@@ -47,5 +50,78 @@
 		position: absolute;
 		right: 0;
 		top: 0;
+	}
+}
+
+.table-wrap {
+	overflow: auto;
+}
+
+.header-complete-profile {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+
+	img {
+		width: 242px;
+		margin-right: 15px;
+
+		@media (max-width: 575.98px) {
+			display: none;
+		}
+	}
+
+	.profile-progress {
+    width: 240px;
+
+    @media (max-width: 767.98px) {
+			width: 100px;
+		}
+
+		@media (max-width: 575.98px) {
+			display: none;
+		}
+
+
+		&__line {
+			height: 4px;
+
+			ul {
+
+				li {
+					width: 1px;
+				}
+			}
+		}
+
+		&__check {
+			width: 16px;
+			height: 16px;
+			border-width: 2px;
+			box-shadow: 0 0 0 2px rgba(#e2e2e2, 0.25);
+
+			i {
+				font-size: 10px;
+
+			}
+		}
+	}
+
+	p {
+		font-size: 12px;
+		line-height: 14px;
+		text-transform: uppercase;
+		color: #454545;
+		margin: 0 15px;
+		white-space: nowrap;
+
+		@media (max-width: 479.98px) {
+			display: none;
+		}
+	}
+
+	a {
+		font-size: 23px;
+		color: #454545;
 	}
 }

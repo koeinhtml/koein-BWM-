@@ -106,7 +106,7 @@
 	justify-content: center;
 	position: relative;
 
-	&:hover {
+	&:hover, &.active {
 		background-color: #fff;
 		.login-ico {
 			background: url("../assets/icons/login-purple.png") no-repeat 50% / contain;

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <title>14_grids_and_right_info_bar.html</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="koein" />
+  <meta name="description" content="" />
+
+	<!-- IOS Meta Data --> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="">
+
+  <!-- Twitter data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content=".">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="" />
+  
+  <!-- stylesheet -->
+	<link rel="stylesheet" href="../../libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="../../libs/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="../../libs/select2/css/select2.min.css">
+  <link rel="stylesheet" href="../../libs/c3-master/c3.min.css">
+  <link rel="stylesheet" href="../../libs/kendo-ui/kendo.default-v2.min.css" />
+  <link rel="stylesheet" href="../../libs/magnific-popup/magnific-popup.css">
+  <!-- <link rel="stylesheet" href="../../libs/daterangepicker/daterangepicker.css"> -->
+	<link rel="stylesheet" href="../../css/styles.css">
+
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
+	<link rel="shortcut icon" href="assets/images/favicons/favicon.png" type="image/png"> 
+
+	
+</head>
+<body class="green-style">
+	<div class="wrapper wrapper-inward">
+		<!-- .header -->
+		<header class="header-inward">
+			<div class="header-inward__col">
+				<a class="btn-menu-inward js-btn-menu-inward" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+				<p class="header-inward__page-title">Dashboard</p>
+			</div>
+			<div class="header-inward__col">
+				<div class="header-complete-profile">
+					<div class="profile-progress">
+						<div class="profile-progress__line">
+							<span style="width: 83%"></span>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="profile-progress__checks">
+							<span class="profile-progress__check"><i class="zmdi zmdi-check"></i></span>
+							<span class="profile-progress__check"><i class="zmdi zmdi-check"></i></span>
+							<span class="profile-progress__check"><i class="zmdi zmdi-check"></i></span>
+						</div>
+						
+					</div>
+					<p>COMPLETE YOUR PROFILE </p>
+					<a href="#"><i class="zmdi zmdi-caret-right-circle"></i></a>
+				</div>
+				<div class="notifications">
+					<a href="#" class="notification"><i class="zmdi zmdi-comment"></i><span class="notification__num">8</span></a>
+					<a href="#" class="notification"><i class="zmdi zmdi-notifications"></i><span class="notification__num">8</span></a>
+				</div>
+			</div>
+		</header>
+		<!-- /.header -->
+		
+		<main class="main-inward">
+			<div class="main-inward__wrap">
+				<div class="main-inward__cover bdt">
+					<div class="main-inward__side js-side-menu show">
+						<div class="side-menu-inward">
+							<a href="01_home.html" class="main-inward__side-logo">
+								<img src="../../assets/logo.png" alt="">
+							</a>
+							<nav>
+								<ul>
+									<li data-page="dashboard">
+										<a href="08_dashboard.html"><i class="dashboard-ico"></i><span>DASHBOARD</span></a>
+										<ul>
+											<li><a href="08_dashboard.html">General</a></li>
+											<li><a href="09_dashboard_financials.html">Financials</a></li>
+										</ul>
+									</li>
+									<li data-page="tools">
+										<a href="#"><i class="tools-ico"></i><span>TOOLS</span></a>
+										<ul>
+											<li><a href="#">BWMS Finder</a></li>
+											<li><a href="#">BWMS Cube</a></li>
+											<li><a href="#">Port Database</a></li>
+											<li><a href="#">My Fleet</a></li>
+											<li><a href="#">Quotes & Documents</a></li>
+										</ul>
+									</li>
+									<li data-page="company">
+										<a href="#"><i class="company-ico"></i><span>THE COMPANY</span></a>
+									</li>
+									<li data-page="settings">
+										<a href="14_settings.html"><i class="settings-ico"></i><span>SETTINGS</span></a>
+									</li>
+									<li data-page="myprofile">
+										<a href="03_login.html"><i class="my-profile-ico"></i><span>MY PROFILE</span></a>
+									</li>
+									<li data-page="mysearches">
+										<a href="14_settings.html"><i class="searches-ico"></i><span>MY SEARCHES</span></a>
+									</li>
+									<li data-page="rules">
+										<a href="03_login.html"><i class="rules-ico"></i><span>RULES</span></a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>	
+					<div class="main-inward__content main-inward__content-row">
+						<div class="main-inward__content-main">
+						
+							<div class="section-head">
+								<div class="main-inward__content-container">
+									<div class="section-head__cover">
+										<div class="section-head__col">
+											<div class="dropdown-inward">
+												<div class="dropdown-inward__btn">
+													<span class="dropdown-inward__btn-title">Actions</span>
+													<span class="dropdown-inward__btn-caret"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+												</div>
+												<ul>
+													<li>
+														<a href="11_add_a_supplier.html">ADD</a>
+													</li>
+													<li>
+														<a href="#">VIEW</a>
+													</li>
+												</ul>
+											</div>
+											<a href="#" class="btn btn-small btn-dark">REQUEST A SERVICE</a>
+										</div>
+										<div class="section-head__col">
+											<a href="#" class="btn btn-small btn-cyan">ORDER MANUAL REPORT</a>
+											<a href="#" class="btn btn-small btn-green-dark">PDF VERSION</a>
+											<a href="#" class="btn btn-small btn-green">SAVE PDF TO PROFILE</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="main-inward__content-container">
+								<div class="main-inward__content-section">
+									<div class="table-inward gray-td-border">
+										<div class="table-inward__main">
+											<table class="js-table-inward table-inward">
+												<thead>
+													<tr>
+														<th>System</th>
+														<th>Manufacturer</th>
+														<th>Technology</th>
+																			
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Ahead BWMS</td>
+														<td><a href="#">Ahead Ocean Technology (Dalian) CO., LTD</a></td>
+														<td>
+															<div class="table-menu-cover">
+																<div class="flex-cover">
+																	<span class="rounded-fill">UV-Medium pressure</span> 
+																	<span class="rounded-fill">Filtration - Screen</span>
+																</div>
+																<div class="table-menu">
+																	<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+																	<ul>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+																			
+													</tr>
+													<tr>
+														<td>Ahead BWMS</td>
+														<td><a href="#">Ahead Ocean Technology (Dalian) CO., LTD</a></td>
+														<td>
+															<div class="table-menu-cover">
+																<div class="flex-cover">
+																	<span class="rounded-fill">UV-Medium pressure</span> 
+																	<span class="rounded-fill">Filtration - Screen</span>
+																</div>
+																<div class="table-menu">
+																	<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+																	<ul>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+																			
+													</tr>
+													<tr>
+														<td>Ahead BWMS</td>
+														<td><a href="#">Ahead Ocean Technology (Dalian) CO., LTD</a></td>
+														<td>
+															<div class="table-menu-cover">
+																<div class="flex-cover">
+																	<span class="rounded-fill">UV-Medium pressure</span> 
+																	<span class="rounded-fill">Filtration - Screen</span>
+																</div>
+																<div class="table-menu">
+																	<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+																	<ul>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+																			
+													</tr>
+																
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="table-inward gray-td-border">
+										<div class="table-inward__main">
+											<table class="js-table-inward table-inward">
+												<colgroup>
+				                    <col />
+				                    <col style="width:450px" />
+				                </colgroup>
+												<thead>
+													<tr>
+														<th>System</th>		
+														<th data-field="a"></th>	
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><input class="k-checkbox" type="checkbox"> Ahead BWMS</td>
+														<td>
+															<div class="table-menu-cover">
+																<div class="flex-cover">
+																	<div class="table-cell-progress full">
+																		<span style="width: 100%"></span>
+																		<p>Best Match</p>
+																	</div>
+																</div>
+																<div class="table-menu">
+																	<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+																	<ul>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+																			
+													</tr>
+													<tr>
+														<td><input class="k-checkbox" type="checkbox"> Ahead BWMS</td>
+														<td>
+															<div class="table-menu-cover">
+																<div class="flex-cover">
+																	<div class="table-cell-progress hight">
+																		<span style="width: 98.02%"></span>
+																		<p>98.02%</p>
+																	</div>
+																</div>
+																<div class="table-menu">
+																	<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+																	<ul>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+																			
+													</tr>
+													<tr>
+														<td><input class="k-checkbox" type="checkbox"> Ahead BWMS</td>
+														<td>
+															<div class="table-menu-cover">
+																<div class="flex-cover">
+																	<div class="table-cell-progress hight">
+																		<span style="width: 88.02%"></span>
+																		<p>88.02%</p>
+																	</div>
+																</div>
+																<div class="table-menu">
+																	<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+																	<ul>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+																			
+													</tr>
+													<tr>
+														<td><input class="k-checkbox" type="checkbox"> Ahead BWMS</td>
+														<td>
+															<div class="table-menu-cover">
+																<div class="flex-cover">
+																	<div class="table-cell-progress hight">
+																		<span style="width: 68.02%"></span>
+																		<p>68.02%</p>
+																	</div>
+																</div>
+																<div class="table-menu">
+																	<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+																	<ul>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+																			
+													</tr>
+													<tr>
+														<td><input class="k-checkbox" type="checkbox"> Ahead BWMS</td>
+														<td>
+															<div class="table-menu-cover">
+																<div class="flex-cover">
+																	<div class="table-cell-progress middle">
+																		<span style="width: 58.02%"></span>
+																		<p>58.02%</p>
+																	</div>
+																</div>
+																<div class="table-menu">
+																	<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+																	<ul>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+																			
+													</tr>
+													<tr>
+														<td><input class="k-checkbox" type="checkbox"> Ahead BWMS</td>
+														<td>
+															<div class="table-menu-cover">
+																<div class="flex-cover">
+																	<div class="table-cell-progress middle">
+																		<span style="width: 48.02%"></span>
+																		<p>48.02%</p>
+																	</div>
+																</div>
+																<div class="table-menu">
+																	<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+																	<ul>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+																			
+													</tr>
+													<tr>
+														<td><input class="k-checkbox" type="checkbox"> Ahead BWMS</td>
+														<td>
+															<div class="table-menu-cover">
+																<div class="flex-cover">
+																	<div class="table-cell-progress middle">
+																		<span style="width: 45.02%"></span>
+																		<p>45.02%</p>
+																	</div>
+																</div>
+																<div class="table-menu">
+																	<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+																	<ul>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+																			
+													</tr>
+													<tr>
+														<td><input class="k-checkbox" type="checkbox"> Ahead BWMS</td>
+														<td>
+															<div class="table-menu-cover">
+																<div class="flex-cover">
+																	<div class="table-cell-progress low">
+																		<span style="width: 40.02%"></span>
+																		<p>40.02%</p>
+																	</div>
+																</div>
+																<div class="table-menu">
+																	<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+																	<ul>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+																			
+													</tr>
+													<tr>
+														<td><input class="k-checkbox" type="checkbox"> Ahead BWMS</td>
+														<td>
+															<div class="table-menu-cover">
+																<div class="flex-cover">
+																	<div class="table-cell-progress low">
+																		<span style="width:38.02%"></span>
+																		<p>38.02%</p>
+																	</div>
+																</div>
+																<div class="table-menu">
+																	<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+																	<ul>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+																			
+													</tr>
+													<tr>
+														<td><input class="k-checkbox" type="checkbox"> Ahead BWMS</td>
+														<td>
+															<div class="table-menu-cover">
+																<div class="flex-cover">
+																	<div class="table-cell-progress low">
+																		<span style="width:30.02%"></span>
+																		<p>30.02%</p>
+																	</div>
+																</div>
+																<div class="table-menu">
+																	<a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings" tabindex="-1"><span class="k-icon k-i-more-vertical"></span></a>
+																	<ul>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																		<li>
+																			<a href="#">Lorem ipsum.</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+																			
+													</tr>
+																
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+						</div>
+						<div class="main-inward__content-side"></div>
+				
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+
+	</div>
+	<script src="../../js/plugins.js"></script>
+	<script src="../../libs/kendo-ui/kendo.all.min.js"></script>
+	
+	<script src="../../js/charts.js"></script>
+	<script src="../../js/tables.js"></script>
+	<script src="../../js/main.js"></script> 
+	<script>
+		$('li[data-page=tools]').addClass('active');
+		$('li[data-page=tools] ul li:nth-child(1)').addClass('active');
+	</script>
+
+</body>
+</html>

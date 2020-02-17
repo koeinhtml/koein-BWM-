@@ -5,18 +5,24 @@ $(document).ready(function() {
 	mobMenuInward();
 	searchInward();
 	popupInit();
-	showSubRow();
 
 });
+
+
 
 function slidersInit() {
 
 	if (!String.prototype.startsWith) {
-  String.prototype.startsWith = function(searchString, position) {
-    position = position || 0;
-    return this.indexOf(searchString, position) === position;
-  };
-}
+	  Object.defineProperty(String.prototype, 'startsWith', {
+	    enumerable: false,
+	    configurable: false,
+	    writable: false,
+	    value: function(searchString, position) {
+	      position = position || 0;
+	      return this.indexOf(searchString, position) === position;
+	    }
+	  });
+	}
 
 	if ($('.js-latest-news-slider').length) {
 		var mySwiper = new Swiper ('.js-latest-news-slider', {
@@ -107,6 +113,7 @@ function mobMenu() {
 	});
 }
 
+
 function mobMenuInward() {
 	$('.js-btn-menu-inward').on('click', function(e) {
 		e.preventDefault();
@@ -135,19 +142,4 @@ function popupInit() {
 		$.magnificPopup.close();
 	});
 
-}
-
-function showSubRow() {
-	$('.js-open-sub-row').on('click', function(e) {
-		e.preventDefault();
-		$(this).closest('tr').toggleClass("active");
-		var table =  $(this).closest('table');
-		var  indexTableRow = $(this).closest('tr').attr('data-tr');
-
-		table.find('tr').each(function (){
-			if ($(this).hasClass(indexTableRow)) {
-				$(this).toggleClass('show');
-			}
-		}) 
-	});
 }

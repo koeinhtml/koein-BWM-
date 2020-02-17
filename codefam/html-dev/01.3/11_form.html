@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('../_include/_head-assets.html', {
+		"title": "11_form"
+	}) 
+
+	
+</head>
+<body class="green-style">
+	<div class="wrapper wrapper-inward">
+		<!-- .header -->
+		@@include('../_include/_header-inward-2.html')
+		<!-- /.header -->
+		
+		<main class="main-inward">
+			<div class="main-inward__wrap">
+				<div class="main-inward__cover bdt">
+					<div class="main-inward__side js-side-menu show">
+						@@include('../_include/_menu-invard-2.html')
+					</div>	
+					<div class="main-inward__content">
+					
+						<div class="profile">
+							<div class="profile__photos">
+								<div class="profile__photo-item">
+									<img src="../../assets/images/profile-img.jpg" alt="">
+								</div>
+								<a href="#" class="profile__photo-item">
+									<span>UPLOAD LOGO</span>
+									<i class="upload-ico"><i class="fa fa-upload" aria-hidden="true"></i></i>
+								</a>
+							</div>
+							<div class="profile__text">
+								<h3>ALAIN CHARTOUNI</h3>
+								<p>Your profile is almost done !</p>
+							</div>
+							<div class="profile-progress">
+								<div class="profile-progress__line"><span style="width: 83%"></span></div>
+								<div class="profile-progress__checks">
+									<span class="profile-progress__check"><i class="zmdi zmdi-check"></i></span>
+									<span class="profile-progress__check"><i class="zmdi zmdi-check"></i></span>
+									<span class="profile-progress__check"><i class="zmdi zmdi-check"></i></span>
+								</div>
+								
+							</div>
+							<div class="profile__btn-wrap">
+								<a href="#" class="btn btn-green">SAVE</a>
+								<a href="#" class="btn btn-small btn-cyan">ORDER</a>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+
+	</div>
+	@@include('../_include/_footer-assets.html') 
+	<script>
+		$('li[data-page=myprofile]').addClass('active');
+	</script>
+
+</body>
+</html>
